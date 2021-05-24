@@ -1,0 +1,1 @@
+$(document).ready(function(){var n=$(".about-us-page");if(n.length){var t=$("#social-bar-desktop-container"),i=n.find("h2"),r=i.siblings(".youtube-video");r.length?t.insertAfter(r):t.insertAfter(i)}SocialBar.init({desktopContainer:"#social-bar-desktop-container",mobileContainer:"#social-bar-mobile-container"});accSmoothScrollToElement(window.location.hash)});

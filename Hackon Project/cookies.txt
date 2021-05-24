@@ -1,0 +1,9 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+headtohealth.gov.au	TRUE	/	FALSE	1999999999	TiPMix	44.853731219123
+headtohealth.gov.au	TRUE	/	FALSE	1999999999	x-ms-routing-name	self
+headtohealth.gov.au	TRUE	/	FALSE	1999999999	ARRAffinity	b1b2b593af00ca6fbf5d71ca9df8e68c3c120f5dc0623dcab2156c5e4d149dc4
+headtohealth.gov.au	TRUE	/	FALSE	1999999999	ARRAffinitySameSite	b1b2b593af00ca6fbf5d71ca9df8e68c3c120f5dc0623dcab2156c5e4d149dc4
+headtohealth.gov.au	TRUE	/	FALSE	1999999999	SameSite	None
+headtohealth.gov.au	TRUE	/	FALSE	1999999999	__RequestVerificationToken	wmEBmJwSDB0AooaN_mGeZXrieVlgTqHqUYx7pySmU3_eg9_E3e4y4xxfG6Tvyc6fo_dpbc9XHTPytRJHLlVdr24cOVqA9j-Y34LFNzW8hhQ1
+
