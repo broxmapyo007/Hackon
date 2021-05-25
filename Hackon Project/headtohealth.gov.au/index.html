@@ -53,8 +53,8 @@
 
             .TopHeader {
                 color: #FFFFFF !important;
-                background-color: #4A3987 !important;
-                background-image: linear-gradient(#4A3987, #4A3987) !important;
+                background-color: #a6d1d1 !important;
+                background-image: linear-gradient(#e6eb97, #9eff9c) !important;
                 border-color: rgba(255, 255, 255, 0.2) !important;
             }
 
@@ -63,40 +63,39 @@
                 background-color: rgba(0, 0, 0, 0) !important;
             }
 
-            .TopHeaderLink:hover, .TopHeaderLink:focus {
+            .TopHeaderLink, .TopHeaderLink:focus {
                 color: #FFFFFF !important;
                 background-color: rgba(255, 255, 255, 0.1) !important;
             }
 
             .CrisisLink {
-                color: #FFFFFF !important;
-                background-color: #CA427B !important;
+                color: #0c1078 !important;
+                background-color: #f0f8ae !important;
             }
 
             .CrisisLink:hover, .CrisisLink:focus {
-                color: #FFFFFF !important;
-                background-color: #921F57 !important;
+                color: #080808 !important;
+                background-color: #fcf3f3 !important;
             }
 
             .Navigation {
                 color: #FFFFFF !important;
-                background-color: #6450A7 !important;
-                background-image: linear-gradient(#6450A7, #6450A7) !important;
-                border-color: rgba(255, 255, 255, 0.2) !important;
+                background-color: #baf2b7 !important;
+                background-image: linear-gradient(#a4efde, #f3fcb2) !important;
             }
 
             .NavigationLink {
-                color: #FFFFFF !important;
+                color: #0c1078 !important;
                 background-color: rgba(0, 0, 0, 0) !important;
             }
 
-            .NavigationLink:hover, .NavigationLink:focus {
-                color: #FFFFFF !important;
-                background-color: rgba(255, 255, 255, 0.2) !important;
+            .NavigationLink:hover,.NavigationLink:focus {
+                color: #0d0e0d !important;
+                background-color: rgb(246, 255, 251) !important;
             }
 
             .NavigationText {
-                color: #FFFFFF !important;
+                color: #0c1078 !important;
             }
 
             .NavigationPageOverlay {
@@ -245,7 +244,113 @@
             .PrimaryButton {
                 background-color: #FFFFFF !important;
             }
+            
+            
+            .feature-box--pink:hover {
+                cursor: pointer;
+                background-color: ;
+                box-shadow: 2px 3px 2px grey;
+            }
+            .feature-box--purple:hover {
+                cursor: pointer;
+                background-color: #f9d2f8;
+                box-shadow: 2px 3px 2px grey;
+            }
+            .feature-box--green:hover {
+                cursor: pointer;
+                background-color: #c3f9c1;
+                box-shadow: 2px 3px 2px grey;
+            }
+            .feature-box--turquoise:hover {
+                cursor: pointer;
+                background-color: #d5f6f5;
+                box-shadow: 2px 3px 2px grey;
+            }
+            
+            .homepage__secondary-content-box--1:hover{
+                cursor:pointer;
+                background-color:#6c52b9;
+                box-shadow: 3px 3px 3px grey;
+            }
+            .homepage__secondary-content-box--2:hover{
+                cursor:pointer;
+                background-color:#5a4795;
+                box-shadow: 3px 3px 3px grey;
+            }
+            .card{
+                background-color:#eaf7fb;
+                margin-top:40px;
 
+            }
+            img{
+                height:256px;
+                width:1044px;
+                opacity: 100%;
+                margin-top: 40px;
+                display:block;
+                border-radius: 10px;
+                box-shadow:2px 3px 5px grey;
+                
+            }
+           
+            @media (max-width: 438px){
+                .homepage__feature-boxes-max-width-container{
+                    display:flex;
+                    flex-direction: column;
+                    flex-basis: 250px;
+                    padding: 8px 5px 8px 5px;
+                    box-sizing: border-box;
+                    justify-content: center;
+                    align-items: center;
+
+                }
+                .feature-box{
+                margin: 3px 15px 29px 63px;
+                
+            }
+             }
+
+           
+            @media (min-width: 439px) and (max-width:1078px) { 
+                .homepage__feature-boxes-max-width-container{
+                    display:flex;
+                    flex-direction: column;
+                    flex-basis: 350px;
+                    padding: 8px 5px 8px 5px;
+                    box-sizing: border-box;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .feature-box{
+                margin: 3px 15px 29px 63px;
+                display: inline-block    
+             }
+
+            }
+            @media (max-width:1078px){
+                .card1{
+                    display:flex;
+                    flex-direction: column;
+                    flex-basis: 80vw;
+                    justify-content: center;
+                    align-items: center;
+                }
+                img{
+                    width:80vw;
+                }
+            }
+            .homepage__welcome-and-search-area{
+                background-image:linear-gradient(to top,#b9c6f7 0%,#eaeab8 11%,#e8c6e8 27%,#f3dcd7 43%,#d9e5f8 60%,#b5cdf8 77%,#9fc0fe 95%);
+            }
+            .header__crisis-area{
+                background-color:  #f2c893;
+            }
+            .homepage__about-head-to-health-area{
+               background-color:  #e6fcff;
+            }
+            .homepage__secondary-content-boxes-area{
+                background-image: linear-gradient(to bottom,#ddf3be 0,#e8fcfa 100%);
+            }
             @-tv-ignore end E777;
         }
     </style>
@@ -395,14 +500,14 @@
             </a>
 
             
-            <a class="header__h2h-logo NavigationText" href="index.html">
+            <a class="header__h2h-logo NavigationText" href="index.html" style="margin: left 70px;">
                 <span class="icon-h2h-logo" aria-hidden="true"></span>
-                <span class="sr-only">Head to Health - Home</span>
+                <span class="sr-only" style="text-align: center;">Mental Bliss - Home</span>
             </a>
 
             
                 <a class="header__languages-link NavigationLink" href="Home/Accessibility%20and%20language.html#languages" target="_self">
-                    <span class="header__languages-link-text">
+                    <span class="header__languages-link-text" style="text-decoration:none;">
                         Languages
                     </span>
                 </a>
@@ -419,11 +524,11 @@
             
             <button class="header__moblet-menu-open-button NavigationText" type="button">
                 <span class="sr-only">Open Menu</span>
-                <span aria-hidden="true">Menu</span>
+                <span aria-hidden="true" style="text-decoration:none;">Menu</span>
             </button>
 
             
-            <button class="header__tablet-menu-close-button" type="button">
+            <button class="header__tablet-menu-close-button" type="button" >
                 <span id="header__tablet-menu-close-button-text" class="header__tablet-menu-close-button-text">
                     Close Menu
                 </span>
@@ -446,7 +551,7 @@
                 " type="button">
             <span class="header__special-link-icon
                   header__special-link-icon--search" aria-hidden="true"></span>
-            <span class="header__special-link-text">
+            <span class="header__special-link-text" style="text-decoration:none;">
                 Search resources <span class='sr-only'> on mobile</span>
             </span>
         </button>
@@ -455,7 +560,7 @@
                 <div class="header__mobile-search-panel-input-container">
                     <label class="header__mobile-search-panel-label"
                            for="header__mobile-search-panel-input">
-                        <span class="sr-only">Search for resources</span>
+                        <span class="sr-only" style="text-decoration:none;">Search for resources</span>
                     </label>
                     <input class="header__mobile-search-panel-input"
                            id="header__mobile-search-panel-input"
@@ -472,30 +577,6 @@
                 </button>
             </div>
         </div>
-
-                            </li>
-                            <li class="header__mobile-menu-top-item">
-                                        <a class="header__special-link
-           header__special-link--mobile
-           " href="https://headtohealth.gov.au:443/sam-the-chatbot" target="_self">
-            <span class="header__special-link-icon
-                  header__special-link-icon--sam" aria-hidden="true"></span>
-            <span class="header__special-link-text">
-                Find with SAM
-            </span>
-        </a>
-
-                            </li>
-                            <li class="header__mobile-menu-top-item">
-                                        <a class="header__special-link
-           header__special-link--mobile
-           " href="https://headtohealth.gov.au:443/saved-resources" target="_self">
-            <span class="header__special-link-icon
-                  header__special-link-icon--star" aria-hidden="true"></span>
-            <span class="header__special-link-text">
-                Your favourites
-            </span>
-        </a>
 
                             </li>
                     </ul>
@@ -517,10 +598,11 @@
        header__menu-item--type-moblet-home
        header__menu-item--type-moblet-level-1
        " href="index.html" target="_self">
-        <span class="header__menu-item-text">
-            Home <span class='sr-only'> link</span>
+        <span class="header__menu-item-text" style="text-decoration:none;">
+            Home
         </span>
     </a>
+        
 
                 </li>
 
@@ -529,9 +611,9 @@
                         <button class="header__menu-item header__menu-item--type-moblet header__menu-item--type-moblet-level-1  header__menu-item--has-menu-panel"
             type="button"
             data-menu-item-id="cf9260dd-c2ef-40dc-bca8-9366d50e3a41"
-            
+            style="text-decoration:none;"
             >
-        <span class="header__menu-item-text">
+        <span class="header__menu-item-text" style="text-decoration:none;">
             About<span class="sr-only"> link</span>
         </span>
     </button>
@@ -544,25 +626,13 @@
             data-menu-item-id="2fef9a92-61dd-4484-ba80-d791cb5ee7eb"
             
             >
-        <span class="header__menu-item-text">
+        <span class="header__menu-item-text" style="text-decoration:none;">
             COVID-19 Support<span class="sr-only"> link</span>
         </span>
     </button>
 
                 </li>
-                <li class="header__moblet-menu-panel-menu-item
-                    ">
-                        <button class="header__menu-item header__menu-item--type-moblet header__menu-item--type-moblet-level-1  header__menu-item--has-menu-panel"
-            type="button"
-            data-menu-item-id="1a86656d-2c4d-4757-9265-e95f87dd3538"
-            
-            >
-        <span class="header__menu-item-text">
-            Meaningful  life<span class="sr-only"> link</span>
-        </span>
-    </button>
-
-                </li>
+               
                 <li class="header__moblet-menu-panel-menu-item
                     ">
                         <button class="header__menu-item header__menu-item--type-moblet header__menu-item--type-moblet-level-1  header__menu-item--has-menu-panel"
@@ -576,30 +646,7 @@
     </button>
 
                 </li>
-                <li class="header__moblet-menu-panel-menu-item
-                    ">
-                        <button class="header__menu-item header__menu-item--type-moblet header__menu-item--type-moblet-level-1  header__menu-item--has-menu-panel"
-            type="button"
-            data-menu-item-id="bd1aab3a-665d-4c81-898a-c69ab2c32bde"
-            
-            >
-        <span class="header__menu-item-text">
-            Supporting yourself<span class="sr-only"> link</span>
-        </span>
-    </button>
-
-                </li>
-                <li class="header__moblet-menu-panel-menu-item
-                    ">
-                        <button class="header__menu-item header__menu-item--type-moblet header__menu-item--type-moblet-level-1  header__menu-item--has-menu-panel"
-            type="button"
-            data-menu-item-id="b8fa1663-b8ad-4af6-8c6f-975f56526bb6"
-            
-            >
-        <span class="header__menu-item-text">
-            Supporting someone else<span class="sr-only"> link</span>
-        </span>
-    </button>
+               
 
                 </li>
                 <li class="header__moblet-menu-panel-menu-item
@@ -635,7 +682,7 @@
            header__menu-item--type-moblet-languages
            header__menu-item--type-moblet-level-1"
            href="Home/Accessibility%20and%20language.html#languages" target="_self">
-            <span class="header__menu-item-text">
+            <span class="header__menu-item-text" style="text-decoration:none;">
                 Languages
             </span>
         </a>
@@ -932,7 +979,7 @@
                 <li class="header__moblet-menu-panel-menu-item
                     ">
                         <a class="header__menu-item header__menu-item--type-moblet header__menu-item--type-moblet-level-2  header__menu-item--type-moblet-link" href="https://headtohealth.gov.au:443/covid-19-support/covid-19-support" target="_self">
-        <span class="header__menu-item-text">
+        <span class="header__menu-item-text" style=" text-decoration: none;">
             COVID-19 Support
         </span>
     </a>
@@ -1002,7 +1049,7 @@
            header__menu-item--type-moblet
            header__menu-item--type-moblet-languages
            header__menu-item--type-moblet-level-1"
-           href="Home/Accessibility%20and%20language.html#languages" target="_self">
+           href="Home/Accessibility%20and%20language.html#languages" target="_self" style=" text-decoration: none;"></a>
             <span class="header__menu-item-text">
                 Languages
             </span>
@@ -6813,7 +6860,7 @@
                         </span>
                     </button>
                 </div>
-                <button class="homepage__search-submit-button" type="submit" aria-label="Submit your search">
+                <button class="homepage__search-submit-button" type="submit" aria-label="Submit your search" style="text-decoration:none;">
                     <span class="sr-only"> Submit your </span>Search 
                 </button>
             </div>
@@ -6823,27 +6870,27 @@
                 </div>
                 <ul class="links-container">
     <li class="link-container links-container__item">
-        <a class="links-container__link" href="search-resources7130.html?search=Anxiety%20and%20Stress" target="_self">
+        <a class="links-container__link" href="search-resources7130.html?search=Anxiety%20and%20Stress" target="_self" style="text-decoration:none;">
             <span class="shrink-to-fit">Anxiety and Stress</span>
         </a>
     </li>
     <li class="link-container links-container__item">
-        <a class="links-container__link" href="search-resources2faa.html?search=Depression" target="_self">
+        <a class="links-container__link" href="search-resources2faa.html?search=Depression" target="_self" style="text-decoration:none;">
             <span class="shrink-to-fit">Depression</span>
         </a>
     </li>
     <li class="link-container links-container__item">
-        <a class="links-container__link" href="search-resourcesea4c.html?search=boosting%20mental%20health" target="_self">
+        <a class="links-container__link" href="search-resourcesea4c.html?search=boosting%20mental%20health" target="_self" style="text-decoration:none;"> 
             <span class="shrink-to-fit">Boost mental health</span>
         </a>
     </li>
     <li class="link-container links-container__item">
-        <a class="links-container__link" href="search-resources9dae.html?search=trauma%20ptsd" target="_self">
+        <a class="links-container__link" href="search-resources9dae.html?search=trauma%20ptsd" target="_self" style="text-decoration:none;">
             <span class="shrink-to-fit">Trauma and PTSD</span>
         </a>
     </li>
     <li class="link-container links-container__item">
-        <a class="links-container__link" href="search-resources3c4f.html?search=professional%20support" target="_self">
+        <a class="links-container__link" href="search-resources3c4f.html?search=professional%20support" target="_self" style="text-decoration:none;">
             <span class="shrink-to-fit">Professional support</span>
         </a>
     </li>
@@ -6861,14 +6908,12 @@
                                 feature-box--type-homepage
                                 feature-box--type-homepage-4-boxes
                                 feature-box--pink">
-                            <div class="feature-box__digi
-                                 feature-box__digi--type-homepage
-                                 feature-box__digi--type-homepage-4-boxes"
-                                 style="background-image: url(https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/homepage/featured-block_covid-19.ashx?rev=140d9662e7474a5caf36223cc6478c2c)"></div>
+                            <div class="feature-box__digi--type-homepage-4-boxes"
+                                 style="background-image: url(https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/homepage/featured-block_covid-19.ashx?rev=140d9662e7474a5caf36223cc6478c2c); cursor:pointer; box-shadow:2px 3px grey;"></div>
 
                             <h2 class="feature-box__heading
                                 feature-box__heading--type-homepage
-                                feature-box__heading--pink">
+                                feature-box__heading--pink" >
                                 COVID-19 Support
                             </h2>
 
@@ -6879,7 +6924,7 @@
                             <div class="feature-box__button-wrapper">
                                 <a class="feature-box__button
                                     feature-box__button--pink" href="https://headtohealth.gov.au:443/covid-19-support" target="_self" aria-label="Find out more about COVID-19 Support">
-                                    <span class="feature-box__button-text">
+                                    <span class="feature-box__button-text" style="text-decoration: none;">
                                         Find out more
                                     </span>
                                 </a>
@@ -6907,7 +6952,7 @@
                             <div class="feature-box__button-wrapper">
                                 <a class="feature-box__button
                                     feature-box__button--purple" href="https://online.speedmarketing.com.au/em/forms/subscribe.php?db=671635&amp;s=363563&amp;a=93258&amp;k=dN_oyyoFEIi1f2KEaUPppab4awW95_fx9ZG_Hv8IZ28&amp;va=5" target="_self" aria-label="Find out more about Monthly newsletter">
-                                    <span class="feature-box__button-text">
+                                    <span class="feature-box__button-text" style="text-decoration: none;">
                                         Find out more
                                     </span>
                                 </a>
@@ -6935,7 +6980,7 @@
                             <div class="feature-box__button-wrapper">
                                 <a class="feature-box__button
                                     feature-box__button--green" href="Home/About/News%20and%20Announcements/Keep%20Your%20Spirit%20Strong.html" target="_self" aria-label="Find out more about Keep Your Spirit Strong">
-                                    <span class="feature-box__button-text">
+                                    <span class="feature-box__button-text" style="text-decoration: none;">
                                         Find out more
                                     </span>
                                 </a>
@@ -6964,7 +7009,7 @@
                             <div class="feature-box__button-wrapper">
                                 <a class="feature-box__button
                                     feature-box__button--turquoise" href="Home/About/news-and-announcements/new-national-safety-and-quality-digital-mental-health-standards.html" target="_self" aria-label="Find out more about New digital mental health standards">
-                                    <span class="feature-box__button-text">
+                                    <span class="feature-box__button-text" style="text-decoration: none;">
                                         Find out more
                                     </span>
                                 </a>
@@ -7079,7 +7124,7 @@
                 aria-expanded="false"
                 aria-controls="youtube-video-player-section"
                 data-expandable="youtube-video-player-section" aria-label="Play Video">
-            <span>Play Video</span>
+            <span> Play Video</span>
         </button>
         <div class="player" id="youtube-video-player-section" aria-hidden="true">
             <div>
@@ -7108,749 +7153,374 @@
             <div class="homepage__horizontal-card-lists-text">
                 Head to Health has more than 500 digital resources to support your wellbeing and mental health. You can start by exploring the resources below or use Search or SAM to find resources that best suit you. Add resources to Your Favourites <span class="homepage__horizontal-card-lists-text-star"></span> to save them.
             </div>
+            <div class="card1">
+                <img src="https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/topicpages/what-can-i-do-right-now-large-2x80.ashx?rev=eaa3a7f5da48438bb2c73a2608a7dcc8?la=en&amp;hash=1D2206E287DDA91B547DFF8DF9230E4D">
+            </div>
             <div class="homepage__horizontal-card-lists-content">
                 <div class="hcl" data-bind="template: { afterRender: $data.AfterRender }">
     <input type="hidden" id="cardListJson-637573499891641283" name="cardListJson" value="[{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://healthyfamilies.beyondblue.org.au/healthy-homes&quot;,&quot;BackgroundColor&quot;:&quot;#0c719a&quot;,&quot;CategoryName&quot;:&quot;Websites&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/website.ashx?rev=d3134fe31ce64e0b907f636dcd59f155&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;From improving resilience to coping with loss, this section of the Healthy Families website provides parents and guardians with information to them help work through issues and improve their family&#39;s wellbeing.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/beyondblue/beyond-blue-healthy-families-healthy-homes2x.ashx?rev=49db6f3429fb4ceb85f1382b7a421422&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/beyondblue/beyond-blue-healthy-families-healthy-homes-xl.ashx?rev=12c9a8ff6b3948cda0086e08afcb2826&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{287493F0-F5ED-41FF-8CD6-BFB27DDFC225}&quot;,&quot;ResourceProvider&quot;:&quot;Beyond Blue&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/beyondblue-logo-colour.ashx?rev=211c3ef448294b23a4a58d72a5660348&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/beyondblue.ashx?rev=fcd109e072364f5e83700aa700fd9298&quot;,&quot;ShortDescription&quot;:&quot;Information and advice for parents to improve their family&#39;s wellbeing.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;Healthy Families: Healthy homes&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/beyondblue-healthy-families-healthy-homes&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{510BD8F8-A062-4A6F-A049-542EF9E8C684}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;beyondblue Healthy Families Healthy homes&quot;},{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://www.beyondblue.org.au/get-support/who-can-assist&quot;,&quot;BackgroundColor&quot;:&quot;#0c719a&quot;,&quot;CategoryName&quot;:&quot;Websites&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/website.ashx?rev=d3134fe31ce64e0b907f636dcd59f155&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;This section of the website describes what different health professionals do. While some people experiencing depression or anxiety conditions may just need help from one particular type of health professional, others may benefit from seeing various people for different aspects of their treatment.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/beyondblue/beyond-blue-who-can-assist-information2x.ashx?rev=fb231ecef5284899b41cb86d4b6c7022&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/beyondblue/beyond-blue-who-can-assist-information-xl.ashx?rev=b1b200906e8348d1abe66fc4acefdc6b&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{287493F0-F5ED-41FF-8CD6-BFB27DDFC225}&quot;,&quot;ResourceProvider&quot;:&quot;Beyond Blue&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/beyondblue-logo-colour.ashx?rev=211c3ef448294b23a4a58d72a5660348&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/beyondblue.ashx?rev=fcd109e072364f5e83700aa700fd9298&quot;,&quot;ShortDescription&quot;:&quot;Information on what different health professionals do.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;Who can assist&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/beyondblue-who-can-assist-information&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{47361BFA-BECB-4452-9932-983D2D078B54}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;beyondblue Who can assist Information&quot;},{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://au.reachout.com/helping-someone-else&quot;,&quot;BackgroundColor&quot;:&quot;#0c719a&quot;,&quot;CategoryName&quot;:&quot;Websites&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/website.ashx?rev=d3134fe31ce64e0b907f636dcd59f155&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;ReachOut&#39;s website provides resources, information and factsheets for wellbeing and mental health, including caring for others. The website also contains tips and advice, and access to youth mental health resources.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/reach-out/reachout-caring-for-others-information2x.ashx?rev=5bf6639e57e54e04b5a598b301c90bb0&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/reach-out/reachout-caring-for-others-information-xl.ashx?rev=fb84fff381ae40b39c633057c2da6412&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{0CC0AD08-7320-4919-B071-F3B6542A30F0}&quot;,&quot;ResourceProvider&quot;:&quot;ReachOut&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/reachout-logo-colour.ashx?rev=0b75f122af26486bb6e26db81de7be9a&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/reachout.ashx?rev=57ca2e3d47d54746a73fd9f0d42f0ad4&quot;,&quot;ShortDescription&quot;:&quot;Wellbeing information and advice for young people who care for others.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;Helping someone else&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/reachout-helping-someone-else&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{392DD0A9-B8F8-4F96-B44A-4E7E5FE38471}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;ReachOut Helping someone else&quot;},{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://kidshelpline.com.au/parents/issues/my-child-struggles-mental-health&quot;,&quot;BackgroundColor&quot;:&quot;#363333&quot;,&quot;CategoryName&quot;:&quot;Websites&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/website.ashx?rev=d3134fe31ce64e0b907f636dcd59f155&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;Many families have faced mental health challenges and found a way through. Some of the most common mental illnesses kids and teens can encounter include depressive and anxiety disorders. Understand the warning signs and know how and when to seek support.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/kids-helpline/kids-helpline_my-child-struggles-with-mental-health_2x.ashx?rev=ef72b1433155429eb0d8fecb5c41044e&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/kids-helpline/kids-helpline_my-child-struggles-with-mental-health_xl.ashx?rev=f3cdc2df18744825b621262ac0b6dd13&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{5A7E64AE-2AAD-43FA-93BF-7BBC6EE9CE81}&quot;,&quot;ResourceProvider&quot;:&quot;Kids Helpline&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/kidshelpline-logo-colour.ashx?rev=0e70cbeaa71d4a33b14f8c24970bc53b&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/khl.ashx?rev=5f5a33fc29d340c3aca9e86ac0889945&quot;,&quot;ShortDescription&quot;:&quot;It&#39;s hard to know how to help your child when they&#39;re having mental health challenges.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;My child struggles with mental health&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/kids-helpline---my-child-struggles-with-mental-health&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{EF1D4821-BA19-48EF-A114-AD9AD73B4362}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;Kids Helpline - My child struggles with mental health&quot;},{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://kidshelpline.com.au/parents/tips/&quot;,&quot;BackgroundColor&quot;:&quot;#ca437c&quot;,&quot;CategoryName&quot;:&quot;Websites&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/website.ashx?rev=d3134fe31ce64e0b907f636dcd59f155&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;A section of the Kids Helpline website providing parents with searchable information resources to help their child. It contains useful tips and information for parents to help them understand what might be going on for their child.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/your-town/your-town-kids-helpline-tips-for-parents2x.ashx?rev=8ba742f31c924b7fb5a17143ebca40ef&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/your-town/kids-helpine-tips-for-parents-xl.ashx?rev=9fe2684cdeb543efb326e595e0421499&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{5A7E64AE-2AAD-43FA-93BF-7BBC6EE9CE81}&quot;,&quot;ResourceProvider&quot;:&quot;Kids Helpline&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/kidshelpline-logo-colour.ashx?rev=0e70cbeaa71d4a33b14f8c24970bc53b&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/khl.ashx?rev=5f5a33fc29d340c3aca9e86ac0889945&quot;,&quot;ShortDescription&quot;:&quot;Tips and Information written for parents to help their children and teens.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;Kids Helpline: Tips for parents&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/kids-helpline-tips-for-parents&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{8EDECB83-3A0A-4719-903A-D375CD76FB45}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;Kids Helpline Tips for Parents&quot;},{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://www.beyondblue.org.au/the-facts/supporting-someone&quot;,&quot;BackgroundColor&quot;:&quot;#0c719a&quot;,&quot;CategoryName&quot;:&quot;Websites&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/website.ashx?rev=d3134fe31ce64e0b907f636dcd59f155&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;This section of the beyondblue website provides information, resources and services for anyone wishing to support someone who is experiencing mental health difficulties. Also featured are publications, a community forum and personal stories.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/beyondblue/beyond-blue-supporting-someone-information2x.ashx?rev=67db4e2037c14baf92970b879d956865&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/beyondblue/beyond-blue-supporting-someone-information-xl.ashx?rev=8949ff185008475ba4800af68c7898c1&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{287493F0-F5ED-41FF-8CD6-BFB27DDFC225}&quot;,&quot;ResourceProvider&quot;:&quot;Beyond Blue&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/beyondblue-logo-colour.ashx?rev=211c3ef448294b23a4a58d72a5660348&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/beyondblue.ashx?rev=fcd109e072364f5e83700aa700fd9298&quot;,&quot;ShortDescription&quot;:&quot;Resources and information for supporting someone else on the beyondblue website.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;Supporting someone&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/beyondblue-supporting-someone&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{AD36D1E5-30DE-4A66-B43A-FB7251758F7F}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;beyondblue supporting someone&quot;},{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://www.beyondblue.org.au/get-support/online-forums/supporting-family-and-friends-with-a-mental-health-condition-(carers)&quot;,&quot;BackgroundColor&quot;:&quot;#0c719a&quot;,&quot;CategoryName&quot;:&quot;Forums&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/forums.ashx?rev=3189c055bc1745868d10ca8bc1969f73&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;A moderated, online peer support forum space for sharing tips on supporting a partner, family member or friend with a mental health condition, and seeking support for your own wellbeing with other carers.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/beyondblue/beyond-blue-supporting-family-and-friends-with-mental-health-forum2x.ashx?rev=eff9eae8ee484532bbb03940754eae4d&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/beyondblue/beyond-blue-supporting-family-members-and-friends-with-mental-health-forum-xl.ashx?rev=6fb20ac8a48844d88afcbb6831383130&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{287493F0-F5ED-41FF-8CD6-BFB27DDFC225}&quot;,&quot;ResourceProvider&quot;:&quot;Beyond Blue&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/beyondblue-logo-colour.ashx?rev=211c3ef448294b23a4a58d72a5660348&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/beyondblue.ashx?rev=fcd109e072364f5e83700aa700fd9298&quot;,&quot;ShortDescription&quot;:&quot;A supportive carer forum and community discussing wellbeing for carers.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;Supporting family and friends with a mental health condition forum&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/beyondblue-supporting-family-and-friends-with-a-mental-health-condition-forum&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{A83B5F02-ACA4-4AC8-B5D6-97404D2B1126}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;beyondblue Supporting family and friends with a mental health condition Forum&quot;},{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://kidshelpline.com.au/parents/issues/supporting-child-who-thinking-suicide&quot;,&quot;BackgroundColor&quot;:&quot;#363333&quot;,&quot;CategoryName&quot;:&quot;Websites&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/website.ashx?rev=d3134fe31ce64e0b907f636dcd59f155&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;It can be frightening to talk about suicide with your child however this resource provides practical advice and information for parents. Kids Helpline offers free, confidential, 24/7 counselling for young people experiencing any issue.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/your-town/kids-helpline_supporting-a-child-thinking-of-suicide_2x.ashx?rev=6a4c3695941a40f5bca35dc76f410a46&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/your-town/kids-helpline_supporting-a-child-thinking-of-suicide_xl.ashx?rev=f28e87698cab427bab5f586a60f92e15&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{5A7E64AE-2AAD-43FA-93BF-7BBC6EE9CE81}&quot;,&quot;ResourceProvider&quot;:&quot;Kids Helpline&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/kidshelpline-logo-colour.ashx?rev=0e70cbeaa71d4a33b14f8c24970bc53b&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/khl.ashx?rev=5f5a33fc29d340c3aca9e86ac0889945&quot;,&quot;ShortDescription&quot;:&quot;This resource provides parents with advice on how to support a child having suicidal thoughts and feelings.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;Support a child who is thinking of suicide&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/kids-helpline---support-a-child-who-is-thinking-of-suicide&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{9A4040D1-4A13-4B7C-9095-3967FF7C5419}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;Kids Helpline - Support a child who is thinking of suicide&quot;},{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://saneforums.org/t5/Carers-Forum/ct-p/carers-forum&quot;,&quot;BackgroundColor&quot;:&quot;#8C7C71&quot;,&quot;CategoryName&quot;:&quot;Forums&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/forums.ashx?rev=3189c055bc1745868d10ca8bc1969f73&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;Seek support. Make connections. Share your experience. The SANE Carers Forums are an online community for people affected by mental illness. They&#39;re a safe, stigma-free, supportive and anonymous peer support community, moderated 24/7 by mental health professionals.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/sane-australia/lived-experience-forumcarers2x.ashx?rev=2e0787c153d542dc9c1a8f93c27f5a0a&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/sane-australia/lived-experience-forum-xl_carers.ashx?rev=c2de13f0cd6b46e685e4af98d059d6a4&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{908CF777-2878-451D-9D1D-BAF4DB4A2960}&quot;,&quot;ResourceProvider&quot;:&quot;SANE&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/sane-logo-colour.ashx?rev=34400ea1d4bc41a4a994070bd87b97db&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/sane.ashx?rev=b92f14abbfca4854ada14b916246807d&quot;,&quot;ShortDescription&quot;:&quot;Supportive community for friends, family of people living with mental illness moderated 24/7 by professionals.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;SANE Forums: Carers&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/sane-carers-forum&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{F053D745-8438-475E-81EE-3D28A50432C1}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;SANE Carers forum&quot;},{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://forums.parents.au.reachout.com/&quot;,&quot;BackgroundColor&quot;:&quot;#0c719a&quot;,&quot;CategoryName&quot;:&quot;Forums&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/forums.ashx?rev=3189c055bc1745868d10ca8bc1969f73&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;ReachOut Parents Peer Support is an online forum that provides a safe space for you to connect with other parents who have similar experiences, and for you to get help, or help others.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/reach-out/reachout-parents-peer-support-forums2x.ashx?rev=39c67f847cb4448bbab7380fb7bdf9ce&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/reach-out/reachout-parents-peer-support-forums-xl.ashx?rev=16d6276412bf4171b5334eb7a0b6694c&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{0CC0AD08-7320-4919-B071-F3B6542A30F0}&quot;,&quot;ResourceProvider&quot;:&quot;ReachOut&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/reachout-logo-colour.ashx?rev=0b75f122af26486bb6e26db81de7be9a&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/reachout.ashx?rev=57ca2e3d47d54746a73fd9f0d42f0ad4&quot;,&quot;ShortDescription&quot;:&quot;A supportive forum and community for parents to help each other.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;Parents peer support forums&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/reachout-parents-peer-support-forums&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{495618F5-86B5-4084-8163-7B48585922B9}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;ReachOut Parents Peer Support Forums&quot;},{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://kidshelpline.com.au/parents/issues/anxiety-kids-and-teens&quot;,&quot;BackgroundColor&quot;:&quot;#363333&quot;,&quot;CategoryName&quot;:&quot;Websites&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/website.ashx?rev=d3134fe31ce64e0b907f636dcd59f155&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;Parenting a child with anxiety is tough. This resource offers information and practical tips to support your child. Kids Helpline is a free online and phone counselling service for young people 5-25 years and is available 24/7.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/your-town/kids-helpline_anxiety-in-kids-and-teens_2x.ashx?rev=399319a192cc48c3b5e4593059d176ad&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/your-town/kids-helpline_anxiety-in-kids-and-teens_xl.ashx?rev=3257f3b4898d4dbaacff7b32ec67cc23&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{5A7E64AE-2AAD-43FA-93BF-7BBC6EE9CE81}&quot;,&quot;ResourceProvider&quot;:&quot;Kids Helpline&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/kidshelpline-logo-colour.ashx?rev=0e70cbeaa71d4a33b14f8c24970bc53b&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/khl.ashx?rev=5f5a33fc29d340c3aca9e86ac0889945&quot;,&quot;ShortDescription&quot;:&quot;A resource to help parents know when anxiety becomes an issue and when to act.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;Anxiety in kids and teens&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/kids-helpline---anxiety-in-kids-and-teens&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{9B9AEB1E-8821-4741-AFE8-94C938607177}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;Kids Helpline - Anxiety in kids and teens&quot;},{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://kidshelpline.com.au/parents/issues/depression-kids-and-teens&quot;,&quot;BackgroundColor&quot;:&quot;#363333&quot;,&quot;CategoryName&quot;:&quot;Websites&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/website.ashx?rev=d3134fe31ce64e0b907f636dcd59f155&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;You might be unsure whether your child is just sad or if it’s something more serious like depression. Informing yourself and knowing when to seek professional support can help.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/kids-helpline/kids-helpline_depression-kids-and-teens_2x.ashx?rev=5cf60db37df8490499a0b800d4d30b2c&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/kids-helpline/kids-helpline_depression-kids-and-teens_xl.ashx?rev=0cf2d8a4d5fa4c60a08c9d9d58586f05&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{5A7E64AE-2AAD-43FA-93BF-7BBC6EE9CE81}&quot;,&quot;ResourceProvider&quot;:&quot;Kids Helpline&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/kidshelpline-logo-colour.ashx?rev=0e70cbeaa71d4a33b14f8c24970bc53b&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/khl.ashx?rev=5f5a33fc29d340c3aca9e86ac0889945&quot;,&quot;ShortDescription&quot;:&quot;If your child has depression, it often won’t get better by itself and they need to see a doctor for support.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;Depression in kids and teens&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/kids-helpline---depression-in-kids-and-teens&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{CF49E444-A5A3-40B9-B6C1-C4465B3065BD}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;Kids Helpline - Depression in kids and teens&quot;}]"/>
 
 
-            <h3 class="hcl__heading">
-                Building positive and healthy family relationships
-            </h3>
+            <h2 class="hcl__heading" style="text-align:center; font-size: 35px; line-height: 43px;">
+            <div class="container"></div>    
+                Wanna fight Bipolar Disorders?<br>
+                &nbsp;Lets Fight In a Fun Way!
+            </h2>
 
+        
+    </div>       
+    <div class="homepage__feature-boxes-area">
+        <div class="homepage__feature-boxes-max-width-container
+             homepage__feature-boxes-max-width-container--4-boxes card">
+                    <div class="feature-box
+                            feature-box--type-homepage
+                            feature-box--type-homepage-4-boxes
+                            feature-box--pink">
+                        <div class="feature-box__digi--type-homepage-4-boxes"></div>
 
-    <div class="hcl__content" data-bind="css: { 'hcl__content--rendered': true }">
-        <button class="hcl__cards-nav-button hcl__cards-nav-button--prev" type="button">
-            <span class="sr-only">
-                Previous Cards <span class="sr-only hcl__cards-nav-button-range"></span> for Building positive and healthy family relationships
-            </span>
-        </button>
-        <ul class="hcl__cards"
-            aria-live="polite">
-            <!-- ko foreach: Cards -->
-            <li class="hcl__card"
-                tabindex="0"
-                data-bind="
-                    attr: {
-                        'aria-labelledby': $data.ItemId,
-                        'data-index': $index(),
-                        'data-modal': ko.toJSON($data)
-                    },
-                    css: {
-                        'hcl__card--type-external': $data.TemplateName == 'ExternalContentCard',
-                        'hcl__card--type-internal': $data.TemplateName == 'InternalContentCard',
-                        'hcl__card--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                    }">
-                
-                <div class="hcl__card-background-color"
-                     data-bind="
-                        style: {
-                            backgroundColor: $data.BackgroundColor
-                        },
-                        css: {
-                            'hcl__card-background-color--type-external': $data.TemplateName == 'ExternalContentCard',
-                            'hcl__card-background-color--type-internal': $data.TemplateName == 'InternalContentCard',
-                            'hcl__card-background-color--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                        }">
-                </div>
+                        <h2 class="feature-box__heading
+                            feature-box__heading--type-homepage
+                            feature-box__heading--pink" style="text-align: center;">
+                            Candy Crush Saga
+                        </h2>
 
-                
-                <div class="hcl__card-background-image"
-                     data-bind="
-                        style: {
-                            backgroundImage: 'url(\'' + ($data.CardImage ? $data.CardImage : '') + '\')'
-                        },
-                        css: {
-                            'hcl__card-background-image--type-external': $data.TemplateName == 'ExternalContentCard',
-                            'hcl__card-background-image--type-internal': $data.TemplateName == 'InternalContentCard',
-                            'hcl__card-background-image--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                        }">
-                </div>
-
-                
-                
-                <h4 class="sr-only -tv-ignore:E898"
-                    data-bind="
-                        html: $data.Title,
-                        attr: { 'id': $data.ItemId }">
-                </h4>
-
-                
-                <div class="hcl__card-crisis-type"
-                     data-bind="
-                        css: {
-                            'hcl__card-crisis-type--type-external': $data.TemplateName == 'ExternalContentCard',
-                            'hcl__card-crisis-type--type-internal': $data.TemplateName == 'InternalContentCard',
-                            'hcl__card-crisis-type--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                        }">
-                    <span class="hcl__card-crisis-type-icon"
-                          aria-hidden="true"
-                          data-bind="
-                            style: {
-                                backgroundImage: 'url(\'' + ($data.ContactTypeImage ? $data.ContactTypeImage : '') + '\')'
-                            }">
-                    </span>
-                    <span class="hcl__card-crisis-type-text"
-                          data-bind="
-                            text: $data.ContactTypeName">
-                    </span>
-                </div>
-
-                
-                <div class="hcl__card-crisis-logo-and-number"
-                     data-bind="
-                        css: {
-                            'hcl__card-crisis-logo-and-number--type-external': $data.TemplateName == 'ExternalContentCard',
-                            'hcl__card-crisis-logo-and-number--type-internal': $data.TemplateName == 'InternalContentCard',
-                            'hcl__card-crisis-logo-and-number--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                        }">
-                    <div class="hcl__card-crisis-logo"
-                         data-bind="
-                            style: {
-                                backgroundImage: 'url(\'' + ($data.ResourceProviderLogoWhite ? $data.ResourceProviderLogoWhite : '') + '\')'
-                            }">
+                        <div class="feature-box__text" style="text-align: center;">
+                            Candy Crush is committed to players’ fun and relaxation that the opening screen features rotating phrases including “Escape the stress of today”.
+                        </div>
+                    
+                        <div class="feature-box__button-wrapper">
+                            <a class="feature-box__button
+                                feature-box__button--pink" href="https://www.king.com/game/candycrush" target="_self">
+                                <span class="feature-box__button-text" style="text-decoration: none;">
+                                    Play Game
+                                </span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="hcl__card-crisis-number"
-                         data-bind="
-                            text: $data.ContactDetails">
+                    <div class="feature-box
+                            feature-box--type-homepage
+                            feature-box--type-homepage-4-boxes
+                            feature-box--purple">
+                        <div class="feature-box__digi
+                             feature-box__digi--type-homepage
+                             feature-box__digi--type-homepage-4-boxes"></div>
+
+                        <h2 class="feature-box__heading
+                            feature-box__heading--type-homepage
+                            feature-box__heading--purple" style="text-align:center;">
+                            Hearthstone
+                        </h2>
+
+                        <div class="feature-box__text">
+                            Hearthstone is a virtual version of a tabletop card game, and you can play against real opponents or the computer.
+
+
+                        </div>
+                    
+                        <div class="feature-box__button-wrapper">
+                            <a class="feature-box__button
+                                feature-box__button--purple" href="https://playhearthstone.com/en-gb" target="_self" aria-label="Find out more about Monthly newsletter">
+                                <span class="feature-box__button-text" style="text-decoration: none; text-align: center;">
+                                    Play Game
+                                </span>
+                            </a>
+                        </div>
                     </div>
-                </div>
+                    <div class="feature-box
+                            feature-box--type-homepage
+                            feature-box--type-homepage-4-boxes
+                            feature-box--green">
+                        <div class="feature-box__digi
+                             feature-box__digi--type-homepage
+                             feature-box__digi--type-homepage-4-boxes"></div>
+                        <h2 class="feature-box__heading
+                            feature-box__heading--type-homepage
+                            feature-box__heading--green" style="text-align: center;">
+                            Pokemon Go
+                        </h2>
 
-                
-                <div class="hcl__card-image"
-                     data-bind="
-                        style: {
-                            backgroundImage: 'url(\'' + ($data.CardImage ? $data.CardImage : '') + '\')'
-                        },
-                        css: {
-                            'hcl__card-image--type-external': $data.TemplateName == 'ExternalContentCard',
-                            'hcl__card-image--type-internal': $data.TemplateName == 'InternalContentCard',
-                            'hcl__card-image--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                        }">
-                </div>
-
-                
-                <!-- ko foreach: $data.ExtraFeatures -->
-                <!-- ko if: ($data.FeatureName == "TherapistGuided") -->
-                <div class="hcl__card-therapist-guided"
-                     data-bind="
-                        text: $data.FeatureData,
-                        css: {
-                            'hcl__card-therapist-guided--type-external': $data.TemplateName == 'ExternalContentCard',
-                            'hcl__card-therapist-guided--type-internal': $data.TemplateName == 'InternalContentCard',
-                            'hcl__card-therapist-guided--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                        }">
-                </div>
-                <!-- /ko -->
-                <!-- /ko -->
-                
-                <h4 class="hcl__card-title -tv-ignore:E866"
-                    aria-hidden="true"
-                    data-bind="
-                        html: $data.Title,
-                        css: {
-                            'hcl__card-title--type-external': $data.TemplateName == 'ExternalContentCard',
-                            'hcl__card-title--type-internal': $data.TemplateName == 'InternalContentCard',
-                            'hcl__card-title--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                        }">
-                </h4>
-
-                
-                <button class="hcl__card-button action-button -tv-ignore:E866"
-                        type="button"
-                        data-bind="
-                            attr: {
-                                'aria-label':  $data.CardButtonAccessibilityText
-                            },
-                            css: {
-                                'hcl__card-button--type-external': $data.TemplateName == 'ExternalContentCard',
-                                'hcl__card-button--type-internal': $data.TemplateName == 'InternalContentCard',
-                                'hcl__card-button--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                            }">
-                    <span class="hcl__card-button-text" data-bind="text: $data.CardButtonText ? $data.CardButtonText : 'See more information'"></span>
-                </button>
-            </li>
-            <!-- /ko -->
-
-                <li class="hcl__search-card">
-                    <h4 class="hcl__search-card-title">
-                        Building positive and healthy family relationships
-                    </h4>
-                    <a class="hcl__search-card-link"
-                       href="search-resourcesef5b.html?search=family">
-                        <span class="hcl__search-card-link-text">
-                            Start search
-                        </span>
-                    </a>
-                </li>
-
-            <li class="hcl__end-spacer"
-                aria-hidden="true">
-            </li>
-        </ul>
-        <button class="hcl__cards-nav-button hcl__cards-nav-button--next" type="button">
-            <span class="sr-only">
-                Next Cards <span class="sr-only hcl__cards-nav-button-range"></span> for Building positive and healthy family relationships
-            </span>
-        </button>
-    </div>
-    <div class="hcl__dots">
-    </div>
-</div><div class="hcl" data-bind="template: { afterRender: $data.AfterRender }">
-    <input type="hidden" id="cardListJson-637573499897734926" name="cardListJson" value="[{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://headspace.org.au/eheadspace/group-chat/making-sleep-count/transcript/&quot;,&quot;BackgroundColor&quot;:&quot;#363333&quot;,&quot;CategoryName&quot;:&quot;Forums&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/forums.ashx?rev=3189c055bc1745868d10ca8bc1969f73&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;Sometimes sleep just doesn&#39;t happen as it should, there are things you can do to help get more sleep and to make sleep a bit easier.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/headspace/headspace_making-sleep-count_2x.ashx?rev=cf5c721049e04c8687fd75a593a27784&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/headspace/headspace_making-sleep-count_xl.ashx?rev=effc3f70fc954e8d92f66b69ca2021b7&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{D5102BA6-E43F-4A2C-A3F1-76FAD493ADCF}&quot;,&quot;ResourceProvider&quot;:&quot;headspace&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/hedspace-logo-colour.ashx?rev=45f1046dd6ca4b2db86113c7d0b7d92b&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/headspace.ashx?rev=699da34be2994079bc0b31e4acdc72c1&quot;,&quot;ShortDescription&quot;:&quot;A forum to help get more sleep and to make sleep a bit easier.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;Making sleep count&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/headspace---making-sleep-count&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{B4230D38-BEF2-42AC-9A8D-37905966556D}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;Headspace - Making sleep count&quot;},{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://headspace.org.au/blog/the-best-foods-for-mental-health/&quot;,&quot;BackgroundColor&quot;:&quot;#363333&quot;,&quot;CategoryName&quot;:&quot;Websites&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/website.ashx?rev=d3134fe31ce64e0b907f636dcd59f155&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;Lots of research points to the fact that what we eat can affect our mental health. Certain foods contain nutrients and vitamins that can boost brain health and improve our mood.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/headspace/headspace_best-foods-for-mental-health_2x.ashx?rev=f1ef720a2cca422fbe5e85035f225c60&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/headspace/headspace_best-foods-for-mental-health_xl.ashx?rev=99309c848f5741f1abb2be41c3865a8a&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{D5102BA6-E43F-4A2C-A3F1-76FAD493ADCF}&quot;,&quot;ResourceProvider&quot;:&quot;headspace&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/hedspace-logo-colour.ashx?rev=45f1046dd6ca4b2db86113c7d0b7d92b&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/headspace.ashx?rev=699da34be2994079bc0b31e4acdc72c1&quot;,&quot;ShortDescription&quot;:&quot;What you put into your body can affect how you feel.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;The best foods for mental health&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/headspace---the-best-foods-for-mental-health&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{7BC099B6-64E8-4B43-8E8D-5A705CA8A553}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;headspace - The best foods for mental health&quot;},{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://www.blackdoginstitute.org.au/wp-content/uploads/2020/04/6-managingdepressionwithexercise.pdf?sfvrsn=6&amp;sfvrsn=6&quot;,&quot;BackgroundColor&quot;:&quot;#363333&quot;,&quot;CategoryName&quot;:&quot;Websites&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/website.ashx?rev=d3134fe31ce64e0b907f636dcd59f155&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;Feeling tired and less motivated are two very common symptoms of depression. This means that exercise is often the last thing people feel like doing when they are feeling depressed. The following strategies can help motivate you to gradually become more active.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/black-dog-institute/black-dog_managing-depression-with-exercise_2x.ashx?rev=bf1c28c0beab4d6db9883f58ef97b5c0&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/black-dog-institute/black-dog_managing-depression-with-exercise_xl.ashx?rev=caba64bd37d94e9fb540db036c317d0e&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{6A164762-FF4D-4987-BCB8-87D7E74B56EA}&quot;,&quot;ResourceProvider&quot;:&quot;Black Dog Institute&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/black-dog-inst-logo-colour.ashx?rev=785b8cfd06d242e1b1a0c5b1e2f6317b&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/blackdog2x.ashx?rev=d34fa0e432034f6ea12cd3c6249dd87f&quot;,&quot;ShortDescription&quot;:&quot;A fact sheet containing helpful strategies to motivate you to become more active.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;Managing depression with exercise&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/black-dog---managing-depression-with-exercise&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{F7E4F075-9FD2-4704-9DFC-DDE377EAAC64}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;black dog - managing depression with exercise&quot;},{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://beyou.edu.au/fact-sheets/wellbeing/nutrition-and-mental-health&quot;,&quot;BackgroundColor&quot;:&quot;#363333&quot;,&quot;CategoryName&quot;:&quot;Websites&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/website.ashx?rev=d3134fe31ce64e0b907f636dcd59f155&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;Healthy eating helps children and young people cope more effectively with stress, better manage their emotions and get a good sleep – all of which assist learning.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/beyondblue/beyondblue_nutrition-and-mental-health_2x.ashx?rev=deab197e3de84751ae620dc1fd4def95&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/beyondblue/beyondblue_nutrition-and-mental-health_xl.ashx?rev=eb4dca09a61d4e1e9d483aa233ac71a7&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{287493F0-F5ED-41FF-8CD6-BFB27DDFC225}&quot;,&quot;ResourceProvider&quot;:&quot;Beyond Blue&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/beyondblue-logo-colour.ashx?rev=211c3ef448294b23a4a58d72a5660348&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/beyondblue.ashx?rev=fcd109e072364f5e83700aa700fd9298&quot;,&quot;ShortDescription&quot;:&quot;Nutrition affects mental health and wellbeing, and promotes and maintains healthy brain development in children and young people.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;How are nutrition and mental health linked?&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/beyondblue---how-are-nutrition-and-mental-health-linked&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{07D2E641-E9CB-40FD-B5B5-37DA8CE10DB8}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;BeyondBlue - How are nutrition and mental health linked&quot;},{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://www.healthdirect.gov.au/10-tips-for-healthy-sleep&quot;,&quot;BackgroundColor&quot;:&quot;#363333&quot;,&quot;CategoryName&quot;:&quot;Websites&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/website.ashx?rev=d3134fe31ce64e0b907f636dcd59f155&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;If you are not sleeping well - or long enough - at night, try the tips to improve the quality of your sleep and to ensure you are properly rested the following day.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/healthdirect-australia/healthdirect_sleep_2x.ashx?rev=0683d7706e9c4471bd179a725471f5ec&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/healthdirect-australia/healthdirect_sleep_xl.ashx?rev=a2de4910b08d4bb292222a6aad3accdd&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{4186BA89-0D77-4306-89EC-D134DFF789D2}&quot;,&quot;ResourceProvider&quot;:&quot;healthdirect&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/healthdirect-logo-colour.ashx?rev=d9838efdb1104b67aadfc3378937dc53&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/healthdirect-logo-white.ashx?rev=ef9fa937d4f547ef81771d391ba40a7e&quot;,&quot;ShortDescription&quot;:&quot;10 tips to improve the quality of your sleep.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;10 tips for healthy sleep&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/healthdirect---10-tips-for-healthy-sleep&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{4F7A6FF3-323B-4E3A-81AF-5D253EF5C119}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;Healthdirect - 10 tips for healthy sleep&quot;},{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://headspace.org.au/young-people/moving-your-way-to-a-healthy-headspace/&quot;,&quot;BackgroundColor&quot;:&quot;#363333&quot;,&quot;CategoryName&quot;:&quot;Websites&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/website.ashx?rev=d3134fe31ce64e0b907f636dcd59f155&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;The headspace website provides resources and services for young people, to help them keep a healthy headspace. headspace is an initiative of the national youth mental health foundation, providing advice, help and face-to-face support through centres and teleweb support.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/headspace/headspace_moving-your-way-to-healthy-headspace_2x.ashx?rev=71329c1e7a6e4aed8f1dc99534d9d073&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/headspace/headspace_moving-your-way-to-healthy-headspace_xl.ashx?rev=fa31417dca2644988ed14e1df657c4bc&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{D5102BA6-E43F-4A2C-A3F1-76FAD493ADCF}&quot;,&quot;ResourceProvider&quot;:&quot;headspace&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/hedspace-logo-colour.ashx?rev=45f1046dd6ca4b2db86113c7d0b7d92b&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/headspace.ashx?rev=699da34be2994079bc0b31e4acdc72c1&quot;,&quot;ShortDescription&quot;:&quot;Staying active can improve sleep, energy levels and help manage stress - helping you keep a healthy headspace.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;Moving your way to a healthy headspace&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/headspace---moving-your-way-to-a-healthy-headspace&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{2D120EDF-6DCC-49F1-A65C-C33C5397142C}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;headspace - Moving your way to a healthy headspace&quot;},{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://www.betterhealth.vic.gov.au/healthyliving/mood-and-food&quot;,&quot;BackgroundColor&quot;:&quot;#363333&quot;,&quot;CategoryName&quot;:&quot;Websites&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/website.ashx?rev=d3134fe31ce64e0b907f636dcd59f155&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot; A healthy diet that is good for your overall health can also help to prevent symptoms of depression and anxiety. When you are feeling well, you may find it easier to stick to a healthy diet, which will in turn help you to continue to feel well.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/better-health/vicgov_mood-and-food_2x.ashx?rev=f68d657829134856b334dc366caecab0&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/better-health/vicgov_mood-and-food_xl.ashx?rev=49b6bc46fd01410cba872a05db4ae7d8&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{B6FEC6E7-E5DA-449A-A8F5-5941679E2A8C}&quot;,&quot;ResourceProvider&quot;:&quot;BetterHealth&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/better-health-channel-logo-colour.ashx?rev=758c5583136d4dcbbb5cf38121476ef8&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;&quot;,&quot;ShortDescription&quot;:&quot;Choosing healthy foods may help you to feel well and happy.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;Mood and food&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/betterhealth---mood-and-food&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{9197B075-0903-4F45-B6B9-7D9C024D5B2A}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;BetterHealth - Mood and food&quot;},{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://www.health.qld.gov.au/news-events/news/good-mood-food-how-food-influences-mental-wellbeing-anxiety-depression-stress&quot;,&quot;BackgroundColor&quot;:&quot;#363333&quot;,&quot;CategoryName&quot;:&quot;Websites&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/website.ashx?rev=d3134fe31ce64e0b907f636dcd59f155&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;Following a healthy pattern of eating is linked with better stress management, improved sleep quality, increased concentration, and better mental wellbeing in general. Just as our food choices affect our physical and mental wellbeing, the opposite is also true – we’re more likely to follow a healthy diet when we’re in a good headspace.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/qld-health/qld-health_good-food-mood_2x.ashx?rev=4f7f42e872de41b88302993a1c6ee87f&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/qld-health/qld-health_good-food-mood_xl.ashx?rev=00f6059818d54b7eb269adffe6aa92d8&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{68485CAF-4461-4313-BE33-E511A085A2E2}&quot;,&quot;ResourceProvider&quot;:&quot;QLD Health&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/qld-health-logo-colour.ashx?rev=6a1ffd8175154ea090e6c699d4d94577&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;&quot;,&quot;ShortDescription&quot;:&quot;Food can have a big impact on our day-to-day mood changes and mental wellbeing.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;Good mood food - how food influences mental wellbeing&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/qld-health---good-mood-food---how-food-influences-mental-wellbeing&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{4A87804C-696B-4079-B0A6-768C538E8935}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;QLD Health - Good mood food - how food influences mental wellbeing&quot;},{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://www.beyondblue.org.au/get-support/staying-well/eating-well&quot;,&quot;BackgroundColor&quot;:&quot;#363333&quot;,&quot;CategoryName&quot;:&quot;Websites&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/website.ashx?rev=d3134fe31ce64e0b907f636dcd59f155&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;Food plays a vital role in maintaining physical and mental health. Eating a nourishing, balanced diet helps to give people an overall sense of wellbeing.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/beyondblue/beyondblue_eating-well_2x.ashx?rev=f52ba59d6d09474cbbc560f55df383cf&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/beyondblue/beyondblue_eating-well_xl.ashx?rev=08dccee942af483ba1ad25d25cc20499&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{287493F0-F5ED-41FF-8CD6-BFB27DDFC225}&quot;,&quot;ResourceProvider&quot;:&quot;Beyond Blue&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/beyondblue-logo-colour.ashx?rev=211c3ef448294b23a4a58d72a5660348&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/beyondblue.ashx?rev=fcd109e072364f5e83700aa700fd9298&quot;,&quot;ShortDescription&quot;:&quot;Food plays a vital role in maintaining physical and mental health.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;Eating well&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/beyond-blue---eating-well&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{3B1FC164-3BC9-4BA6-ACE4-B2C8E30090AF}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;Beyond Blue - Eating well&quot;}]"/>
-
-
-            <h3 class="hcl__heading">
-                Improve your physical health for better mental health
-            </h3>
-
-
-    <div class="hcl__content" data-bind="css: { 'hcl__content--rendered': true }">
-        <button class="hcl__cards-nav-button hcl__cards-nav-button--prev" type="button">
-            <span class="sr-only">
-                Previous Cards <span class="sr-only hcl__cards-nav-button-range"></span> for Improve your physical health for better mental health
-            </span>
-        </button>
-        <ul class="hcl__cards"
-            aria-live="polite">
-            <!-- ko foreach: Cards -->
-            <li class="hcl__card"
-                tabindex="0"
-                data-bind="
-                    attr: {
-                        'aria-labelledby': $data.ItemId,
-                        'data-index': $index(),
-                        'data-modal': ko.toJSON($data)
-                    },
-                    css: {
-                        'hcl__card--type-external': $data.TemplateName == 'ExternalContentCard',
-                        'hcl__card--type-internal': $data.TemplateName == 'InternalContentCard',
-                        'hcl__card--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                    }">
-                
-                <div class="hcl__card-background-color"
-                     data-bind="
-                        style: {
-                            backgroundColor: $data.BackgroundColor
-                        },
-                        css: {
-                            'hcl__card-background-color--type-external': $data.TemplateName == 'ExternalContentCard',
-                            'hcl__card-background-color--type-internal': $data.TemplateName == 'InternalContentCard',
-                            'hcl__card-background-color--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                        }">
-                </div>
-
-                
-                <div class="hcl__card-background-image"
-                     data-bind="
-                        style: {
-                            backgroundImage: 'url(\'' + ($data.CardImage ? $data.CardImage : '') + '\')'
-                        },
-                        css: {
-                            'hcl__card-background-image--type-external': $data.TemplateName == 'ExternalContentCard',
-                            'hcl__card-background-image--type-internal': $data.TemplateName == 'InternalContentCard',
-                            'hcl__card-background-image--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                        }">
-                </div>
-
-                
-                
-                <h4 class="sr-only -tv-ignore:E898"
-                    data-bind="
-                        html: $data.Title,
-                        attr: { 'id': $data.ItemId }">
-                </h4>
-
-                
-                <div class="hcl__card-crisis-type"
-                     data-bind="
-                        css: {
-                            'hcl__card-crisis-type--type-external': $data.TemplateName == 'ExternalContentCard',
-                            'hcl__card-crisis-type--type-internal': $data.TemplateName == 'InternalContentCard',
-                            'hcl__card-crisis-type--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                        }">
-                    <span class="hcl__card-crisis-type-icon"
-                          aria-hidden="true"
-                          data-bind="
-                            style: {
-                                backgroundImage: 'url(\'' + ($data.ContactTypeImage ? $data.ContactTypeImage : '') + '\')'
-                            }">
-                    </span>
-                    <span class="hcl__card-crisis-type-text"
-                          data-bind="
-                            text: $data.ContactTypeName">
-                    </span>
-                </div>
-
-                
-                <div class="hcl__card-crisis-logo-and-number"
-                     data-bind="
-                        css: {
-                            'hcl__card-crisis-logo-and-number--type-external': $data.TemplateName == 'ExternalContentCard',
-                            'hcl__card-crisis-logo-and-number--type-internal': $data.TemplateName == 'InternalContentCard',
-                            'hcl__card-crisis-logo-and-number--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                        }">
-                    <div class="hcl__card-crisis-logo"
-                         data-bind="
-                            style: {
-                                backgroundImage: 'url(\'' + ($data.ResourceProviderLogoWhite ? $data.ResourceProviderLogoWhite : '') + '\')'
-                            }">
+                        <div class="feature-box__text" style="text-align:center;">
+                            Pokémon Go with simple goals for catching the various Pokémon characters, encourages you to walk outdoors and get some exercise.
+                        </div>
+                    
+                        <div class="feature-box__button-wrapper">
+                            <a class="feature-box__button
+                                feature-box__button--green" href="https://www.pokemon.com/us/app/pokemon-go/" target="_self" aria-label="Find out more about Keep Your Spirit Strong">
+                                <span class="feature-box__button-text" style="text-decoration: none; text-align: center;">
+                                    Play Game
+                                </span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="hcl__card-crisis-number"
-                         data-bind="
-                            text: $data.ContactDetails">
+                    <div class="feature-box
+                            feature-box--type-homepage
+                            feature-box--type-homepage-4-boxes
+                            feature-box--turquoise">
+                        <div class="feature-box__digi
+                             feature-box__digi--type-homepage
+                             feature-box__digi--type-homepage-4-boxes"></div>
+
+                        <h2 class="feature-box__heading
+                            feature-box__heading--type-homepage
+                            feature-box__heading--turquoise" style="text-align: center;">
+                            JigSaw Puzzles
+                        </h2>
+
+                        <div class="feature-box__text" style="text-align: center;">
+                            If you love working jigsaw puzzles in real life, you may find that playing a virtual jigsaw puzzle game on your mobile device can act as an effective substitute, especially when you’re away from home.
+
+                        </div>
+                    
+                        <div class="feature-box__button-wrapper">
+                            <a class="feature-box__button
+                                feature-box__button--turquoise" href="https://www.jigsawexplorer.com/" target="_self" aria-label="Find out more about New digital mental health standards">
+                                <span class="feature-box__button-text" style="text-decoration: none;text-align: center;">
+                                    Play Game
+                                </span>
+                            </a>
+                        </div>
                     </div>
-                </div>
+                <div class="homepage__feature-boxes-spacer
+                     homepage__feature-boxes-spacer--4-boxes"></div>
+        </div>
+    </div> 
+    <div class="homepage__feature-boxes-area">
+        <div class="homepage__feature-boxes-max-width-container
+             homepage__feature-boxes-max-width-container--4-boxes card">
+                    <div class="feature-box
+                            feature-box--type-homepage
+                            feature-box--type-homepage-4-boxes
+                            feature-box--pink">
+                        <div class="feature-box__digi--type-homepage-4-boxes"></div>
 
-                
-                <div class="hcl__card-image"
-                     data-bind="
-                        style: {
-                            backgroundImage: 'url(\'' + ($data.CardImage ? $data.CardImage : '') + '\')'
-                        },
-                        css: {
-                            'hcl__card-image--type-external': $data.TemplateName == 'ExternalContentCard',
-                            'hcl__card-image--type-internal': $data.TemplateName == 'InternalContentCard',
-                            'hcl__card-image--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                        }">
-                </div>
+                        <h2 class="feature-box__heading
+                            feature-box__heading--type-homepage
+                            feature-box__heading--pink" style="text-align: center;">
+                            Bejeweled
+                        </h2>
 
-                
-                <!-- ko foreach: $data.ExtraFeatures -->
-                <!-- ko if: ($data.FeatureName == "TherapistGuided") -->
-                <div class="hcl__card-therapist-guided"
-                     data-bind="
-                        text: $data.FeatureData,
-                        css: {
-                            'hcl__card-therapist-guided--type-external': $data.TemplateName == 'ExternalContentCard',
-                            'hcl__card-therapist-guided--type-internal': $data.TemplateName == 'InternalContentCard',
-                            'hcl__card-therapist-guided--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                        }">
-                </div>
-                <!-- /ko -->
-                <!-- /ko -->
-                
-                <h4 class="hcl__card-title -tv-ignore:E866"
-                    aria-hidden="true"
-                    data-bind="
-                        html: $data.Title,
-                        css: {
-                            'hcl__card-title--type-external': $data.TemplateName == 'ExternalContentCard',
-                            'hcl__card-title--type-internal': $data.TemplateName == 'InternalContentCard',
-                            'hcl__card-title--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                        }">
-                </h4>
-
-                
-                <button class="hcl__card-button action-button -tv-ignore:E866"
-                        type="button"
-                        data-bind="
-                            attr: {
-                                'aria-label':  $data.CardButtonAccessibilityText
-                            },
-                            css: {
-                                'hcl__card-button--type-external': $data.TemplateName == 'ExternalContentCard',
-                                'hcl__card-button--type-internal': $data.TemplateName == 'InternalContentCard',
-                                'hcl__card-button--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                            }">
-                    <span class="hcl__card-button-text" data-bind="text: $data.CardButtonText ? $data.CardButtonText : 'See more information'"></span>
-                </button>
-            </li>
-            <!-- /ko -->
-
-                <li class="hcl__search-card">
-                    <h4 class="hcl__search-card-title">
-                        Improve physical health for better mental health
-                    </h4>
-                    <a class="hcl__search-card-link"
-                       href="search-resources19aa.html?search=physical%20health">
-                        <span class="hcl__search-card-link-text">
-                            Start search
-                        </span>
-                    </a>
-                </li>
-
-            <li class="hcl__end-spacer"
-                aria-hidden="true">
-            </li>
-        </ul>
-        <button class="hcl__cards-nav-button hcl__cards-nav-button--next" type="button">
-            <span class="sr-only">
-                Next Cards <span class="sr-only hcl__cards-nav-button-range"></span> for Improve your physical health for better mental health
-            </span>
-        </button>
-    </div>
-    <div class="hcl__dots">
-    </div>
-</div><div class="hcl" data-bind="template: { afterRender: $data.AfterRender }">
-    <input type="hidden" id="cardListJson-637573499898672416" name="cardListJson" value="[{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://vimeo.com/phoenixaustralia/httpsvimeocomunderstandingtrauma&quot;,&quot;BackgroundColor&quot;:&quot;#363333&quot;,&quot;CategoryName&quot;:&quot;Websites&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/website.ashx?rev=d3134fe31ce64e0b907f636dcd59f155&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;This animated video explains how a traumatic experience can affect someone - what to expect, and when to seek help.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/phoenix-australia/phoenixaustraliaunderstandingtrauma2x.ashx?rev=b304a8ce02054825b9f981dbd2ad8fbe&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/phoenix-australia/phoenix_australia-understanding-trauma_xl.ashx?rev=251eaa28275445d5964a39eee93530b6&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{0D0FDC52-0689-429D-86E7-C697190701EF}&quot;,&quot;ResourceProvider&quot;:&quot;Phoenix Australia&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/phoenix-logo-colour.ashx?rev=66557016613748939ff7647023a5ba06&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/phoenix-logo-white.ashx?rev=50f8596b99e64876a44c839aed8afc3d&quot;,&quot;ShortDescription&quot;:&quot;A brief video to understand more about trauma and how it affects people.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;Understanding trauma&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/phoenix-australia---understanding-trauma&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{045CFCA5-0CBE-426B-A6FE-104CD6D71D27}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;Phoenix Australia - Understanding trauma&quot;},{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;http://at-ease.dva.gov.au/veterans/resources/mobile-apps/ptsd-coach/&quot;,&quot;BackgroundColor&quot;:&quot;#0c719a&quot;,&quot;CategoryName&quot;:&quot;Apps &amp; Programs&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/apps_programs.ashx?rev=ed455f784f55426ea208ccd6864fe5a8&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;The PTSD Coach Australia app is designed for serving and ex-serving Australian Defence Force members. It helps you manage the symptoms that commonly occur after trauma and learn about PTSD and professional support. Free to download from App Store and Google Play.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:true,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/dova/dova-ptsd-coach-app2x.ashx?rev=7004e8e4c3de4705992db0fbe73a290a&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/dova/dova-ptsd-coach-xl.ashx?rev=fcefc2671f9346ea96450a0af023eca2&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{5D314206-E382-4B0B-B955-79EE3F1DAFD1}&quot;,&quot;ResourceProvider&quot;:&quot;Open Arms – Veterans and Families Counselling&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/open-arms-logo-colour.ashx?rev=f95058b015a245d684f289c27474e86b&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/open-arms-white-landscape.ashx?rev=90916e999bca43b3997dc652a336ef08&quot;,&quot;ShortDescription&quot;:&quot;A free app to manage PTSD and trauma.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;PTSD Coach Australia app&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/open-arms---ptsd-coach-app&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{E981457D-8DAA-4921-9095-F6530C943E9F}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;Open Arms - PTSD Coach App&quot;},{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://www.blueknot.org.au/Helpline&quot;,&quot;BackgroundColor&quot;:&quot;#0c719a&quot;,&quot;CategoryName&quot;:&quot;Phone, Chat &amp; Email&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/chat.ashx?rev=f89f4064cc6f4c8c9a4754a81f3307f0&quot;,&quot;ContactTypeImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/contacttype/call.ashx?rev=8380a7e82df3493cbb6b8b0c7396fc61&quot;,&quot;ContactTypeName&quot;:&quot;Call&quot;,&quot;ContactDetails&quot;:&quot;1300 657 380&quot;,&quot;Description&quot;:&quot;Blue Knot Helpline is a specialist short-term phone counselling service for adult survivors of childhood trauma and abuse. Experienced trauma counsellors give counselling support, information, referrals for survivors and concerned family and friends, building safety, trust and empowering recovery.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/crisis-cards/blueknot-counselling-hotline.ashx?rev=2dff52f53eb74fa2b2cca53516af7f7d&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/blue-knot-foundation/blue-knot-helpline-xl.ashx?rev=3ada7ad1112e42d68357e255508d8863&quot;,&quot;Price&quot;:null,&quot;ResourceProviderId&quot;:&quot;{FF395D33-20ED-41DF-8D1B-E5441A1FD637}&quot;,&quot;ResourceProvider&quot;:&quot;Blue Knot Foundation&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/blue-knot-logo-colour.ashx?rev=2f51c7fb272e44849d94cbfc43844227&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/blueknot.ashx?rev=2f34c1b0ebbf47bfaeef2d9176d76091&quot;,&quot;ShortDescription&quot;:&quot;A phone counselling service for adult survivors of childhood trauma and abuse.&quot;,&quot;TemplateName&quot;:&quot;CrisisContentCard&quot;,&quot;Time&quot;:&quot;&quot;,&quot;Title&quot;:&quot;Blue Knot Helpline&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/blue-knot-foundation---blue-knot-helpline&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{906AD975-B0A0-40BE-B3A1-228B19FE2D5F}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;Blue Knot Foundation - Blue Knot Helpline&quot;},{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://www.sane.org/mental-health-and-illness/facts-and-guides/post-traumatic-stress-disorder&quot;,&quot;BackgroundColor&quot;:&quot;#8C7C71&quot;,&quot;CategoryName&quot;:&quot;Websites&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/website.ashx?rev=d3134fe31ce64e0b907f636dcd59f155&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;Straightforward and concise information about post-traumatic stress disorder, symptoms, treatment and support. As well as helping you understand post-traumatic stress disorder, the guide explains treatments for this condition and what you can do to help yourself.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/sane-australia/ptsd-website2x.ashx?rev=1bdcb436caa345e087eace4540f151cd&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/sane-australia/ptsd-website-xl.ashx?rev=555e0097df1a4149b7e8c51d77bee23e&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{908CF777-2878-451D-9D1D-BAF4DB4A2960}&quot;,&quot;ResourceProvider&quot;:&quot;SANE&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/sane-logo-colour.ashx?rev=34400ea1d4bc41a4a994070bd87b97db&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/sane.ashx?rev=b92f14abbfca4854ada14b916246807d&quot;,&quot;ShortDescription&quot;:&quot;A guide outlining symptoms, treatment and self-care for PTSD.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;Post-traumatic stress disorder fact sheet&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/sane-post-traumatic-stress-disorder-factsheet&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{5E75FA97-5A47-48F2-8345-A6FF53C23EEA}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;SANE Post-traumatic stress disorder factsheet&quot;},{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://www.mentalhealthonline.org.au/pages/about-the-ptsd-online-program&quot;,&quot;BackgroundColor&quot;:&quot;#363333&quot;,&quot;CategoryName&quot;:&quot;Apps &amp; Programs&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/apps_programs.ashx?rev=ed455f784f55426ea208ccd6864fe5a8&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;A free online program designed to help you learn skills and strategies to manage PTSD and improve your quality of life. PTSD Online includes information, videos, exercises, and optional support from a therapist via email, chat or video.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/mental-health-online/mental-health-online-ptsd-online2x.ashx?rev=14a0d2e733b945cab37bf7dbd5d84fa7&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/mental-health-online/mental-health-online-ptsd-xl.ashx?rev=e984c5c5d7114f838dc10bf116cd93c4&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{1F94852A-5C29-45DC-80DC-F9C7833741F8}&quot;,&quot;ResourceProvider&quot;:&quot;Mental Health Online&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/mental-health-online-logo-colour.ashx?rev=1298dfc6b5bf4bbd8f50576f80f1fe6f&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/mentalhealthonline.ashx?rev=0270546cc429476bba4fe17a12f00a80&quot;,&quot;ShortDescription&quot;:&quot;Access our free online program to help you manage PTSD.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;PTSD Online program&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/swinburne-university---ptsd-online-program&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{D5CF6B65-EDDF-487E-85C8-DFCCD52E8D7F}&quot;,&quot;ExtraFeatures&quot;:[{&quot;FeatureName&quot;:&quot;TherapistGuided&quot;,&quot;FeatureData&quot;:&quot;Therapist-guided&quot;}],&quot;ItemName&quot;:&quot;Swinburne University - PTSD Online program&quot;},{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://www.blueknot.org.au/Workers-Practitioners/For-Health-Professionals/Resources-for-Health-Professionals/Coping-into-Adulthood&quot;,&quot;BackgroundColor&quot;:&quot;#363333&quot;,&quot;CategoryName&quot;:&quot;Websites&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/website.ashx?rev=d3134fe31ce64e0b907f636dcd59f155&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;This section of the Blue Knot Foundation website provides coping strategies, advice and resources for anyone who has experienced childhood trauma or abuse. Blue Knot Foundation, National Centre of Excellence for Complex Trauma, provides phone counselling, resources, workshops for adults affected by childhood trauma and abuse. &quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/blue-knot-foundation/blue-knot-coping-strategies2x.ashx?rev=8d672e011a354ab293c2569ccd59f2f8&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/blue-knot-foundation/blue-knot-coping-strategies-xl.ashx?rev=0181882f48c9447491fdfd3e9c6d01da&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{FF395D33-20ED-41DF-8D1B-E5441A1FD637}&quot;,&quot;ResourceProvider&quot;:&quot;Blue Knot Foundation&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/blue-knot-logo-colour.ashx?rev=2f51c7fb272e44849d94cbfc43844227&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/blueknot.ashx?rev=2f34c1b0ebbf47bfaeef2d9176d76091&quot;,&quot;ShortDescription&quot;:&quot;Coping strategies, resources for adult survivors of childhood trauma or abuse.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;Coping strategies information&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/blue-knot-foundation---coping-strategies-information&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{30B9CDC7-804D-49A4-B83B-38CFCA4E1BBC}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;Blue Knot Foundation - Coping strategies information&quot;},{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://www.blueknot.org.au/Resources/Information/Understanding-terms-trauma-and-abuse&quot;,&quot;BackgroundColor&quot;:&quot;#363333&quot;,&quot;CategoryName&quot;:&quot;Websites&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/website.ashx?rev=d3134fe31ce64e0b907f636dcd59f155&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;This section of the Blue Knot Foundation website provides information, guidance and resources for adults who have experienced any form of childhood trauma or abuse. Blue Knot Foundation, National Centre of Excellence for Complex Trauma, provides phone counselling, resources, workshops for adults affected by childhood trauma and abuse. &quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/blue-knot-foundation/blue-knot-foundation-childhood-trauma-and-abuse-info2x.ashx?rev=4144bfa846424f01ae388e748d757f18&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/blue-knot-foundation/blue-knot-foundation-childhood-trauma-information-xl.ashx?rev=2751e1cee63f42ec8c7cb18aa140c807&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{FF395D33-20ED-41DF-8D1B-E5441A1FD637}&quot;,&quot;ResourceProvider&quot;:&quot;Blue Knot Foundation&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/blue-knot-logo-colour.ashx?rev=2f51c7fb272e44849d94cbfc43844227&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/blueknot.ashx?rev=2f34c1b0ebbf47bfaeef2d9176d76091&quot;,&quot;ShortDescription&quot;:&quot;Information and resources for adults who experienced childhood trauma or abuse.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;Childhood trauma and abuse information&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/blue-knot-foundation---childhood-trauma-and-abuse-information&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{1516D7B0-0A25-40E2-955D-673AEFD8CE0D}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;Blue Knot Foundation - Childhood trauma and abuse information&quot;},{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://www.phoenixaustralia.org/recovery/&quot;,&quot;BackgroundColor&quot;:&quot;#363333&quot;,&quot;CategoryName&quot;:&quot;Websites&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/website.ashx?rev=d3134fe31ce64e0b907f636dcd59f155&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;This section of our website has information about how people react to and recover from trauma. Find out how to help yourself or support someone else (including children) after trauma. Read about the best treatments for people who are having trouble recovering after trauma. There are also fact sheets, videos, personal stories and other resources.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/phoenix-australia/phoenixaustralianrecovery2x.ashx?rev=f0a24cc0c59249fc98185ca926d10695&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/phoenix-australia/phoenix_australian-recovery_xl.ashx?rev=daebd3673bc74cd9b0d57d8a82624944&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{0D0FDC52-0689-429D-86E7-C697190701EF}&quot;,&quot;ResourceProvider&quot;:&quot;Phoenix Australia&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/phoenix-logo-colour.ashx?rev=66557016613748939ff7647023a5ba06&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/phoenix-logo-white.ashx?rev=50f8596b99e64876a44c839aed8afc3d&quot;,&quot;ShortDescription&quot;:&quot;Information about how people react to and recover from trauma, including effective treatments.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;Recovering from Trauma&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/phoenix-australia---recovering-from-trauma&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{21DBC52E-25B3-45B3-BA0E-BBEC63D7C231}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;Phoenix Australia - Recovering from Trauma&quot;},{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://thiswayup.org.au/how-we-can-help/courses/posttraumatic-stress-disorder-ptsd-course/&quot;,&quot;BackgroundColor&quot;:&quot;#363333&quot;,&quot;CategoryName&quot;:&quot;Apps &amp; Programs&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/apps_programs.ashx?rev=ed455f784f55426ea208ccd6864fe5a8&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;This 8-lesson course teaches how to tackle frightening flashbacks, nightmares, anxiety, or low mood following a traumatic event or experience, and use helpful strategies to start feeling better. You will need to get a health professional to supervise you in this course.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/this-way-up/thiswayupptscourse2x.ashx?rev=4c9fe4fe8bb644438c04b4f639576ae9&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/this-way-up/this-way-up_pts-course_xl.ashx?rev=94e17e8c6b4643c8b9f26bb78d45426f&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{FA81245A-416A-4ADD-84A9-9F7BAF66CF9D}&quot;,&quot;ResourceProvider&quot;:&quot;This Way Up&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/twu-logo-colour.ashx?rev=bbd2d549b4574830b6e14b3fa9e051a2&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/twu.ashx?rev=aad8deaa697d4e63bd9d20bccf4e6bdb&quot;,&quot;ShortDescription&quot;:&quot;A therapist-guided online course created by experts teaching skills to manage post-traumatic stress symptoms.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;Post-Traumatic Stress (PTS) Course&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/this-way-up---posttraumatic-stress-pts-course&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{1C9CF76B-AF0C-4671-B06D-B5AA180BF675}&quot;,&quot;ExtraFeatures&quot;:[{&quot;FeatureName&quot;:&quot;TherapistGuided&quot;,&quot;FeatureData&quot;:&quot;Therapist-guided&quot;}],&quot;ItemName&quot;:&quot;This Way Up - PostTraumatic Stress PTS Course&quot;},{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://www.sane.org/mental-health-and-illness/facts-and-guides/traumatic-events&quot;,&quot;BackgroundColor&quot;:&quot;#8C7C71&quot;,&quot;CategoryName&quot;:&quot;Websites&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/website.ashx?rev=d3134fe31ce64e0b907f636dcd59f155&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;The SANE website provides information and resources to help people gain further understanding about mental health. This factsheet on traumatic events is a guide to help manage symptoms associated with their experiences.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/sane-australia/traumatic-events-website2x.ashx?rev=b51d8d9ceee34039b61471bb9a8af1e1&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/sane-australia/traumatic-events-website-xl.ashx?rev=c839606ac8a84c6d8776c4be1b518c3e&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{908CF777-2878-451D-9D1D-BAF4DB4A2960}&quot;,&quot;ResourceProvider&quot;:&quot;SANE&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/sane-logo-colour.ashx?rev=34400ea1d4bc41a4a994070bd87b97db&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/sane.ashx?rev=b92f14abbfca4854ada14b916246807d&quot;,&quot;ShortDescription&quot;:&quot;Resources to help people gain a further understanding about mental health.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;Traumatic events fact sheet&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/sane-traumatic-events-fact-sheet&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{1D1ADD3B-5D38-48F3-8168-6725670A7287}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;SANE Traumatic Events Fact sheet&quot;},{&quot;ActionText&quot;:&quot;Go to Service Provider&quot;,&quot;ActionTarget&quot;:&quot;_blank&quot;,&quot;ActionUrl&quot;:&quot;https://mindspot.org.au/ptsd-course&quot;,&quot;BackgroundColor&quot;:&quot;#363333&quot;,&quot;CategoryName&quot;:&quot;Apps &amp; Programs&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/apps_programs.ashx?rev=ed455f784f55426ea208ccd6864fe5a8&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;​The Post-traumatic Stress Disorder (PTSD) Course helps adults aged 18 years and over to manage psychological and emotional symptoms resulting from experiencing a traumatic event. The Course consists of five lessons delivered over eight weeks. You can choose to receive weekly therapist support or choose to contact us when you need to.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/mindspot/mindspot-ptsd-course2x.ashx?rev=62a2a587b65a48149fda600b3e7680ad&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/external-cards/mindspot/mindspot-ptsd-course-xl.ashx?rev=d9a8d6bf44fb43b58c94e37e2c6fa158&quot;,&quot;Price&quot;:&quot;Free&quot;,&quot;ResourceProviderId&quot;:&quot;{45D3481C-98F1-44BD-8A86-850F02B1DF73}&quot;,&quot;ResourceProvider&quot;:&quot;MindSpot&quot;,&quot;ResourceProviderLogo&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/colour-logos/mindspot-logo-colour.ashx?rev=09ad3ba359074bb9bc2852edda3dc8ad&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/provider-logos/mindspot.ashx?rev=5d273e9ef9e748e69ee5de4ce270d8bd&quot;,&quot;ShortDescription&quot;:&quot;Break unhelpful habits and learn practical psychological skills to help manage your symptoms.&quot;,&quot;TemplateName&quot;:&quot;ExternalContentCard&quot;,&quot;Time&quot;:&quot;Anytime, Anywhere&quot;,&quot;Title&quot;:&quot;MindSpot PTSD Course&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/mindspot---mindspot-ptsd-course&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{ECC28119-ACC2-40F9-872C-57F637276A70}&quot;,&quot;ExtraFeatures&quot;:[{&quot;FeatureName&quot;:&quot;TherapistGuided&quot;,&quot;FeatureData&quot;:&quot;Therapist-guided&quot;}],&quot;ItemName&quot;:&quot;MindSpot - MindSpot PTSD Course&quot;}]"/>
-
-
-            <h3 class="hcl__heading">
-                Coping with Trauma and stress-related disorders (PTSD) 
-            </h3>
-
-
-    <div class="hcl__content" data-bind="css: { 'hcl__content--rendered': true }">
-        <button class="hcl__cards-nav-button hcl__cards-nav-button--prev" type="button">
-            <span class="sr-only">
-                Previous Cards <span class="sr-only hcl__cards-nav-button-range"></span> for Coping with Trauma and stress-related disorders (PTSD) 
-            </span>
-        </button>
-        <ul class="hcl__cards"
-            aria-live="polite">
-            <!-- ko foreach: Cards -->
-            <li class="hcl__card"
-                tabindex="0"
-                data-bind="
-                    attr: {
-                        'aria-labelledby': $data.ItemId,
-                        'data-index': $index(),
-                        'data-modal': ko.toJSON($data)
-                    },
-                    css: {
-                        'hcl__card--type-external': $data.TemplateName == 'ExternalContentCard',
-                        'hcl__card--type-internal': $data.TemplateName == 'InternalContentCard',
-                        'hcl__card--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                    }">
-                
-                <div class="hcl__card-background-color"
-                     data-bind="
-                        style: {
-                            backgroundColor: $data.BackgroundColor
-                        },
-                        css: {
-                            'hcl__card-background-color--type-external': $data.TemplateName == 'ExternalContentCard',
-                            'hcl__card-background-color--type-internal': $data.TemplateName == 'InternalContentCard',
-                            'hcl__card-background-color--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                        }">
-                </div>
-
-                
-                <div class="hcl__card-background-image"
-                     data-bind="
-                        style: {
-                            backgroundImage: 'url(\'' + ($data.CardImage ? $data.CardImage : '') + '\')'
-                        },
-                        css: {
-                            'hcl__card-background-image--type-external': $data.TemplateName == 'ExternalContentCard',
-                            'hcl__card-background-image--type-internal': $data.TemplateName == 'InternalContentCard',
-                            'hcl__card-background-image--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                        }">
-                </div>
-
-                
-                
-                <h4 class="sr-only -tv-ignore:E898"
-                    data-bind="
-                        html: $data.Title,
-                        attr: { 'id': $data.ItemId }">
-                </h4>
-
-                
-                <div class="hcl__card-crisis-type"
-                     data-bind="
-                        css: {
-                            'hcl__card-crisis-type--type-external': $data.TemplateName == 'ExternalContentCard',
-                            'hcl__card-crisis-type--type-internal': $data.TemplateName == 'InternalContentCard',
-                            'hcl__card-crisis-type--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                        }">
-                    <span class="hcl__card-crisis-type-icon"
-                          aria-hidden="true"
-                          data-bind="
-                            style: {
-                                backgroundImage: 'url(\'' + ($data.ContactTypeImage ? $data.ContactTypeImage : '') + '\')'
-                            }">
-                    </span>
-                    <span class="hcl__card-crisis-type-text"
-                          data-bind="
-                            text: $data.ContactTypeName">
-                    </span>
-                </div>
-
-                
-                <div class="hcl__card-crisis-logo-and-number"
-                     data-bind="
-                        css: {
-                            'hcl__card-crisis-logo-and-number--type-external': $data.TemplateName == 'ExternalContentCard',
-                            'hcl__card-crisis-logo-and-number--type-internal': $data.TemplateName == 'InternalContentCard',
-                            'hcl__card-crisis-logo-and-number--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                        }">
-                    <div class="hcl__card-crisis-logo"
-                         data-bind="
-                            style: {
-                                backgroundImage: 'url(\'' + ($data.ResourceProviderLogoWhite ? $data.ResourceProviderLogoWhite : '') + '\')'
-                            }">
+                        <div class="feature-box__text" style="text-align: center;">
+                            It’s a classic puzzle game that involves swapping differently shaped virtual “jewels” to form sets of at least three. When you form sets of four or five like types and colors, you’re rewarded with special jewels that can blow up other jewels and result in higher scores.
+                        </div>
+                    
+                        <div class="feature-box__button-wrapper">
+                            <a class="feature-box__button
+                                feature-box__button--pink" href="https://www.digbejeweled.com/" target="_self">
+                                <span class="feature-box__button-text" style="text-decoration: none;">
+                                    Play Game
+                                </span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="hcl__card-crisis-number"
-                         data-bind="
-                            text: $data.ContactDetails">
+                    <div class="feature-box
+                            feature-box--type-homepage
+                            feature-box--type-homepage-4-boxes
+                            feature-box--purple">
+                        <div class="feature-box__digi
+                             feature-box__digi--type-homepage
+                             feature-box__digi--type-homepage-4-boxes"></div>
+
+                        <h2 class="feature-box__heading
+                            feature-box__heading--type-homepage
+                            feature-box__heading--purple" style="text-align:center;">
+                            Monument Valley
+                        </h2>
+
+                        <div class="feature-box__text">
+                            You’ll be challenged by the ever-changing manipulative realm of peculiar geometry and optical illusions. 
+
+
+                        </div>
+                    
+                        <div class="feature-box__button-wrapper">
+                            <a class="feature-box__button
+                                feature-box__button--purple" href="https://www.monumentvalleygame.com/mv2" target="_self" aria-label="Find out more about Monthly newsletter">
+                                <span class="feature-box__button-text" style="text-decoration: none; text-align: center;">
+                                    Play Game
+                                </span>
+                            </a>
+                        </div>
                     </div>
-                </div>
+                    <div class="feature-box
+                            feature-box--type-homepage
+                            feature-box--type-homepage-4-boxes
+                            feature-box--green">
+                        <div class="feature-box__digi
+                             feature-box__digi--type-homepage
+                             feature-box__digi--type-homepage-4-boxes"></div>
+                        <h2 class="feature-box__heading
+                            feature-box__heading--type-homepage
+                            feature-box__heading--green" style="text-align: center;">
+                            Mario Kart
+                        </h2>
 
-                
-                <div class="hcl__card-image"
-                     data-bind="
-                        style: {
-                            backgroundImage: 'url(\'' + ($data.CardImage ? $data.CardImage : '') + '\')'
-                        },
-                        css: {
-                            'hcl__card-image--type-external': $data.TemplateName == 'ExternalContentCard',
-                            'hcl__card-image--type-internal': $data.TemplateName == 'InternalContentCard',
-                            'hcl__card-image--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                        }">
-                </div>
-
-                
-                <!-- ko foreach: $data.ExtraFeatures -->
-                <!-- ko if: ($data.FeatureName == "TherapistGuided") -->
-                <div class="hcl__card-therapist-guided"
-                     data-bind="
-                        text: $data.FeatureData,
-                        css: {
-                            'hcl__card-therapist-guided--type-external': $data.TemplateName == 'ExternalContentCard',
-                            'hcl__card-therapist-guided--type-internal': $data.TemplateName == 'InternalContentCard',
-                            'hcl__card-therapist-guided--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                        }">
-                </div>
-                <!-- /ko -->
-                <!-- /ko -->
-                
-                <h4 class="hcl__card-title -tv-ignore:E866"
-                    aria-hidden="true"
-                    data-bind="
-                        html: $data.Title,
-                        css: {
-                            'hcl__card-title--type-external': $data.TemplateName == 'ExternalContentCard',
-                            'hcl__card-title--type-internal': $data.TemplateName == 'InternalContentCard',
-                            'hcl__card-title--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                        }">
-                </h4>
-
-                
-                <button class="hcl__card-button action-button -tv-ignore:E866"
-                        type="button"
-                        data-bind="
-                            attr: {
-                                'aria-label':  $data.CardButtonAccessibilityText
-                            },
-                            css: {
-                                'hcl__card-button--type-external': $data.TemplateName == 'ExternalContentCard',
-                                'hcl__card-button--type-internal': $data.TemplateName == 'InternalContentCard',
-                                'hcl__card-button--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                            }">
-                    <span class="hcl__card-button-text" data-bind="text: $data.CardButtonText ? $data.CardButtonText : 'See more information'"></span>
-                </button>
-            </li>
-            <!-- /ko -->
-
-                <li class="hcl__search-card">
-                    <h4 class="hcl__search-card-title">
-                        Search for more resources on this topic
-                    </h4>
-                    <a class="hcl__search-card-link"
-                       href="search-resources9daa.html?search=trauma%20and%20ptsd">
-                        <span class="hcl__search-card-link-text">
-                            Start search
-                        </span>
-                    </a>
-                </li>
-
-            <li class="hcl__end-spacer"
-                aria-hidden="true">
-            </li>
-        </ul>
-        <button class="hcl__cards-nav-button hcl__cards-nav-button--next" type="button">
-            <span class="sr-only">
-                Next Cards <span class="sr-only hcl__cards-nav-button-range"></span> for Coping with Trauma and stress-related disorders (PTSD) 
-            </span>
-        </button>
-    </div>
-    <div class="hcl__dots">
-    </div>
-</div><div class="hcl" data-bind="template: { afterRender: $data.AfterRender }">
-    <input type="hidden" id="cardListJson-637573499899609904" name="cardListJson" value="[{&quot;ActionText&quot;:&quot;Read on Head to Health&quot;,&quot;ActionTarget&quot;:&quot;&quot;,&quot;ActionUrl&quot;:&quot;https://headtohealth.gov.au/mental-health-difficulties/mental-health-conditions/obsessive-compulsive-and-related-disorders&quot;,&quot;BackgroundColor&quot;:&quot;#b75141&quot;,&quot;CategoryName&quot;:&quot;Head to Health pages&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/pages.ashx?rev=097fe592b7d04c4eb82150d1fbe79c21&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;An informative service which helps you learn about obsessive compulsive and related disorders, and find services and support for them. The Head to Health website brings together hundreds of Australian mental health resources and services, and leads you to the ones most helpful to your situation.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/topiccards/conditions-ocd.ashx?rev=c9548c7cbcff40a6b549cc327fb473d0&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/topiccards/topic-page-screenshots/ocd.ashx?rev=c267d58637d145ddacc4fd5656c91d81&quot;,&quot;Price&quot;:null,&quot;ResourceProviderId&quot;:&quot;{5177392E-4F82-4350-A2AA-5FEF1F51A496}&quot;,&quot;ResourceProvider&quot;:&quot;Head to Health&quot;,&quot;ResourceProviderLogo&quot;:&quot;&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;&quot;,&quot;ShortDescription&quot;:&quot;A key resource in learning about OCD and finding support services.&quot;,&quot;TemplateName&quot;:&quot;InternalContentCard&quot;,&quot;Time&quot;:&quot;&quot;,&quot;Title&quot;:&quot;Obsessive-compulsive and related disorders&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/h2h-mhc-obsessive-compulsive-and-related-disorders&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{C11D3ABB-6F7E-4AF0-877C-FD75AA6F427F}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;H2H MHC Obsessive compulsive and related disorders&quot;},{&quot;ActionText&quot;:&quot;Read on Head to Health&quot;,&quot;ActionTarget&quot;:&quot;&quot;,&quot;ActionUrl&quot;:&quot;https://headtohealth.gov.au/meaningful-life/physical-health/food&quot;,&quot;BackgroundColor&quot;:&quot;#186860&quot;,&quot;CategoryName&quot;:&quot;Head to Health pages&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/pages.ashx?rev=097fe592b7d04c4eb82150d1fbe79c21&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;This section of the Head to Health website offers key points on personal wellbeing through healthy dietary and food choices. It pools together hard-to-find resources, apps and online programs and connects you with them, helping you improve your wellbeing with improving eating habits.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/topiccards/food.ashx?rev=5a1280d79c094eb8a4526b32dadb9f85&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/topiccards/topic-page-screenshots/food.ashx?rev=a6c9b03a55e74084b94388d42c0930a1&quot;,&quot;Price&quot;:null,&quot;ResourceProviderId&quot;:&quot;{5177392E-4F82-4350-A2AA-5FEF1F51A496}&quot;,&quot;ResourceProvider&quot;:&quot;Head to Health&quot;,&quot;ResourceProviderLogo&quot;:&quot;&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;&quot;,&quot;ShortDescription&quot;:&quot;Key information on food choices for mental health, linking to many resources.&quot;,&quot;TemplateName&quot;:&quot;InternalContentCard&quot;,&quot;Time&quot;:&quot;&quot;,&quot;Title&quot;:&quot;Food&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/h2h-phys-health---food&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{B3EC25AF-46DE-4416-8C88-A6EDB4B9AD13}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;H2H Phys Health - Food&quot;},{&quot;ActionText&quot;:&quot;Read on Head to Health&quot;,&quot;ActionTarget&quot;:&quot;&quot;,&quot;ActionUrl&quot;:&quot;https://headtohealth.gov.au/meaningful-life/what-helps-us-thrive&quot;,&quot;BackgroundColor&quot;:&quot;#0c719a&quot;,&quot;CategoryName&quot;:&quot;Head to Health pages&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/pages.ashx?rev=097fe592b7d04c4eb82150d1fbe79c21&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;This section of the Head to Health website offers key points on personal wellbeing and living a meaningful life. It can connect you to hard-to-find resources, apps and online programs helping you improve your wellbeing with purpose, healthy relationships, physical health, and more.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/topiccards/thrive_card.ashx?rev=b293d7f007bc4448b80cdb844b52dabf&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/topiccards/topic-page-screenshots/what-helps-us-thrive.ashx?rev=536eb56b67b6450a9bef16de98ffda15&quot;,&quot;Price&quot;:null,&quot;ResourceProviderId&quot;:&quot;{5177392E-4F82-4350-A2AA-5FEF1F51A496}&quot;,&quot;ResourceProvider&quot;:&quot;Head to Health&quot;,&quot;ResourceProviderLogo&quot;:&quot;&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;&quot;,&quot;ShortDescription&quot;:&quot;A mental health and wellbeing resource.&quot;,&quot;TemplateName&quot;:&quot;InternalContentCard&quot;,&quot;Time&quot;:&quot;&quot;,&quot;Title&quot;:&quot;What helps us thrive?&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/h2h-meaningful---what-helps-us-thrive&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{431D178B-923C-427D-89B7-4EEA4F882C08}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;H2H Meaningful - what helps us thrive&quot;},{&quot;ActionText&quot;:&quot;Read on Head to Health&quot;,&quot;ActionTarget&quot;:&quot;&quot;,&quot;ActionUrl&quot;:&quot;https://headtohealth.gov.au/mental-health-difficulties/mental-health-conditions/trauma-and-stressor-related-disorders&quot;,&quot;BackgroundColor&quot;:&quot;#0c719a&quot;,&quot;CategoryName&quot;:&quot;Head to Health pages&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/pages.ashx?rev=097fe592b7d04c4eb82150d1fbe79c21&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;An informative service which helps you learn about trauma and stressor-related disorders, and find wellbeing services and support. The Head to Health website brings together hundreds of Australian mental health resources and services, and leads you to the ones most helpful to your situation.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/topiccards/conditions-trauma.ashx?rev=4efea368d4f64c2aae4ec358cb3bbead&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/topiccards/topic-page-screenshots/trauma.ashx?rev=3ce1172b2d5b4d42bc97a20ec32dac3f&quot;,&quot;Price&quot;:null,&quot;ResourceProviderId&quot;:&quot;{5177392E-4F82-4350-A2AA-5FEF1F51A496}&quot;,&quot;ResourceProvider&quot;:&quot;Head to Health&quot;,&quot;ResourceProviderLogo&quot;:&quot;&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;&quot;,&quot;ShortDescription&quot;:&quot;A key resource in finding support for trauma and stressor-related disorders.&quot;,&quot;TemplateName&quot;:&quot;InternalContentCard&quot;,&quot;Time&quot;:&quot;&quot;,&quot;Title&quot;:&quot;Trauma and stressor-related disorders&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/h2h-mhc-trauma-and-stressor-related-disorders&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{ED643D87-9269-41ED-9160-C1835CE87693}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;H2H MHC Trauma and stressor related disorders&quot;},{&quot;ActionText&quot;:&quot;Read on Head to Health&quot;,&quot;ActionTarget&quot;:&quot;&quot;,&quot;ActionUrl&quot;:&quot;https://headtohealth.gov.au/supporting-someone-else/supporting/aboriginal-and-torres-strait-islander-peoples&quot;,&quot;BackgroundColor&quot;:&quot;#0c719a&quot;,&quot;CategoryName&quot;:&quot;Head to Health pages&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/pages.ashx?rev=097fe592b7d04c4eb82150d1fbe79c21&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;An informative resource that helps you find social and emotional wellbeing services for Aboriginal and Torres Strait Islander peoples. The Head to Health website pools together hundreds of Australian mental health resources and services, and points you to the ones most helpful to your situation.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/topiccards/aboriginal--100.ashx?rev=8c2f270b1d64420f96174eaeecf0bb91&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/topiccards/topic-page-screenshots/support-atsi.ashx?rev=41a174e5e96d42218be006dc059ec234&quot;,&quot;Price&quot;:null,&quot;ResourceProviderId&quot;:&quot;{5177392E-4F82-4350-A2AA-5FEF1F51A496}&quot;,&quot;ResourceProvider&quot;:&quot;Head to Health&quot;,&quot;ResourceProviderLogo&quot;:&quot;&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;&quot;,&quot;ShortDescription&quot;:&quot;A key resource in finding social and emotional wellbeing support and services.&quot;,&quot;TemplateName&quot;:&quot;InternalContentCard&quot;,&quot;Time&quot;:&quot;&quot;,&quot;Title&quot;:&quot;Supporting Aboriginal and Torres Strait Islander peoples&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/h2h-supporting---aboriginal-and-torres-strait-islander&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{F2D3AB04-E8A9-4E1B-8A97-5A00159A1F68}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;H2H Supporting - Aboriginal and Torres Strait Islander&quot;},{&quot;ActionText&quot;:&quot;Read on Head to Health&quot;,&quot;ActionTarget&quot;:&quot;&quot;,&quot;ActionUrl&quot;:&quot;https://headtohealth.gov.au/Supporting yourself/Support for/Culturally and linguistically diverse people&quot;,&quot;BackgroundColor&quot;:&quot;#b75141&quot;,&quot;CategoryName&quot;:&quot;Head to Health pages&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/pages.ashx?rev=097fe592b7d04c4eb82150d1fbe79c21&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;An informative resource for finding mental health services and support for anyone from another culture or who speaks another language. The Head to Health website pools together hundreds of Australian mental health resources and services, and points you to the ones most helpful to your situation.&amp;nbsp;&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/topiccards/getting-help-people-from-other-languages-cultures.ashx?rev=5baec8b4369040cb83c3164ab2e8e1a6&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/topiccards/topic-page-screenshots/screenshot-support-for-cald.ashx?rev=8b668cc6aae64de5b681e81c8e900b20&quot;,&quot;Price&quot;:null,&quot;ResourceProviderId&quot;:&quot;{5177392E-4F82-4350-A2AA-5FEF1F51A496}&quot;,&quot;ResourceProvider&quot;:&quot;Head to Health&quot;,&quot;ResourceProviderLogo&quot;:&quot;&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;&quot;,&quot;ShortDescription&quot;:&quot;An informative mental health resource which helps people from other cultures.&quot;,&quot;TemplateName&quot;:&quot;InternalContentCard&quot;,&quot;Time&quot;:&quot;&quot;,&quot;Title&quot;:&quot;Culturally and linguistically diverse people&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/h2h-support-for-cald&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{BC38B220-3249-40DB-818A-8C8727A9313A}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;H2H Support for CALD&quot;},{&quot;ActionText&quot;:&quot;Read on Head to Health&quot;,&quot;ActionTarget&quot;:&quot;&quot;,&quot;ActionUrl&quot;:&quot;https://headtohealth.gov.au/meaningful-life/purposeful-activity/hobbies&quot;,&quot;BackgroundColor&quot;:&quot;#186860&quot;,&quot;CategoryName&quot;:&quot;Head to Health pages&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/pages.ashx?rev=097fe592b7d04c4eb82150d1fbe79c21&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;This section of the Head to Health website offers key points on the mental health benefits of hobbies and personal interests. It pools together hard-to-find resources, apps and online programs and connects you with them, helping you maintain your mental health and wellbeing.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/topiccards/hobbies.ashx?rev=f56fec062c8945df85c448b14ad2a3ff&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/topiccards/topic-page-screenshots/hobbies.ashx?rev=09ef0c34cab946a29b2d4750f843fb50&quot;,&quot;Price&quot;:null,&quot;ResourceProviderId&quot;:&quot;{5177392E-4F82-4350-A2AA-5FEF1F51A496}&quot;,&quot;ResourceProvider&quot;:&quot;Head to Health&quot;,&quot;ResourceProviderLogo&quot;:&quot;&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;&quot;,&quot;ShortDescription&quot;:&quot;Key information on the wellbeing benefits of hobbies, linking to resources.&quot;,&quot;TemplateName&quot;:&quot;InternalContentCard&quot;,&quot;Time&quot;:&quot;&quot;,&quot;Title&quot;:&quot;Hobbies&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/h2h-purposeful---hobbies&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{07627286-8C99-4543-8A9B-C21AEDE61124}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;H2H Purposeful - Hobbies&quot;},{&quot;ActionText&quot;:&quot;Read on Head to Health&quot;,&quot;ActionTarget&quot;:&quot;&quot;,&quot;ActionUrl&quot;:&quot;https://headtohealth.gov.au/mental-health-difficulties/mental-health-conditions/anxiety-disorders&quot;,&quot;BackgroundColor&quot;:&quot;#5c4a9e&quot;,&quot;CategoryName&quot;:&quot;Head to Health pages&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/pages.ashx?rev=097fe592b7d04c4eb82150d1fbe79c21&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;An informative service which helps you learn about anxiety disorders, and find wellbeing services and support for anxiety disorders. The Head to Health website brings together hundreds of Australian mental health resources and services, and leads you to the ones most helpful to your situation.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/topiccards/conditions-anxiety.ashx?rev=f4fa402ec6b5406e94e5f740c6d71394&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/topiccards/topic-page-screenshots/anxiety.ashx?rev=517988a620964d9dba4c111c26d9c703&quot;,&quot;Price&quot;:null,&quot;ResourceProviderId&quot;:&quot;{5177392E-4F82-4350-A2AA-5FEF1F51A496}&quot;,&quot;ResourceProvider&quot;:&quot;Head to Health&quot;,&quot;ResourceProviderLogo&quot;:&quot;&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;&quot;,&quot;ShortDescription&quot;:&quot;A key resource in learning about anxiety disorders and finding support services.&quot;,&quot;TemplateName&quot;:&quot;InternalContentCard&quot;,&quot;Time&quot;:&quot;&quot;,&quot;Title&quot;:&quot;Anxiety disorders&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/h2h-mhc-anxiety-disorders&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{0CB018AD-01B6-4E16-AAC8-622F09700B70}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;H2H MHC Anxiety disorders&quot;},{&quot;ActionText&quot;:&quot;Read on Head to Health&quot;,&quot;ActionTarget&quot;:&quot;&quot;,&quot;ActionUrl&quot;:&quot;https://headtohealth.gov.au/covid-19-support/covid-19&quot;,&quot;BackgroundColor&quot;:&quot;#186860&quot;,&quot;CategoryName&quot;:&quot;Head to Health pages&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/pages.ashx?rev=097fe592b7d04c4eb82150d1fbe79c21&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;Concerns around the coronavirus outbreak and the need to self-isolate can be stressful and impact our mental health and wellbeing. This page provides information to help support everyone&amp;rsquo;s mental health and wellbeing during this pandemic.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/topiccards/covid19bannercard2x80.ashx?rev=397bcad8286948a18104b5ae9b02a9ba&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/topiccards/topic-page-screenshots/headtohealth_covid-19-support.ashx?rev=1845762306ca41e49d458d4d7264bf84&quot;,&quot;Price&quot;:null,&quot;ResourceProviderId&quot;:&quot;{5177392E-4F82-4350-A2AA-5FEF1F51A496}&quot;,&quot;ResourceProvider&quot;:&quot;Head to Health&quot;,&quot;ResourceProviderLogo&quot;:&quot;&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;&quot;,&quot;ShortDescription&quot;:&quot;Information and support for your mental health and wellbeing during the pandemic.&quot;,&quot;TemplateName&quot;:&quot;InternalContentCard&quot;,&quot;Time&quot;:&quot;&quot;,&quot;Title&quot;:&quot;COVID-19 Support&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/h2h-covid-19-support---covid-19-support&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{15919E18-5D53-4B42-8DF2-FF9A4231DE55}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;H2H COVID-19 Support - COVID-19 Support&quot;},{&quot;ActionText&quot;:&quot;Read on Head to Health&quot;,&quot;ActionTarget&quot;:&quot;&quot;,&quot;ActionUrl&quot;:&quot;https://headtohealth.gov.au/supporting-yourself/support-for/carers&quot;,&quot;BackgroundColor&quot;:&quot;#ca437c&quot;,&quot;CategoryName&quot;:&quot;Head to Health pages&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/pages.ashx?rev=097fe592b7d04c4eb82150d1fbe79c21&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;A resource for mental health carers and anyone who supports another person, to find Australian mental health services and support for themselves. The Head to Health website pools together hundreds of Australian wellbeing resources and services, and points you to those most helpful to your situation.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/topiccards/support-for-carers.ashx?rev=22ff77630ef94637826c6eb80d712376&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/topiccards/topic-page-screenshots/support-for-carers.ashx?rev=56bac0a4fcc64dbd9ccbc00f69b7ddc8&quot;,&quot;Price&quot;:null,&quot;ResourceProviderId&quot;:&quot;{5177392E-4F82-4350-A2AA-5FEF1F51A496}&quot;,&quot;ResourceProvider&quot;:&quot;Head to Health&quot;,&quot;ResourceProviderLogo&quot;:&quot;&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;&quot;,&quot;ShortDescription&quot;:&quot;Help for carers and supporters of others to find support for themselves.&quot;,&quot;TemplateName&quot;:&quot;InternalContentCard&quot;,&quot;Time&quot;:&quot;&quot;,&quot;Title&quot;:&quot; Supporting yourself - carers&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/h2h-support-for-carers&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{629F0F91-4F99-46DB-9110-C88533F2CE7B}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;H2H Support for carers&quot;},{&quot;ActionText&quot;:&quot;Read on Head to Health&quot;,&quot;ActionTarget&quot;:&quot;&quot;,&quot;ActionUrl&quot;:&quot;https://headtohealth.gov.au/supporting-yourself/support-for/sexuality&quot;,&quot;BackgroundColor&quot;:&quot;#186860&quot;,&quot;CategoryName&quot;:&quot;Head to Health pages&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/pages.ashx?rev=097fe592b7d04c4eb82150d1fbe79c21&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;An informative resource to help people more easily find mental health services and support for LGBTI people. The Head to Health website pools together hundreds of Australian mental health resources and services, and points you to the ones most helpful to your situation.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/topiccards/getting-help-lgbitq.ashx?rev=68cef4cf8d834a2db14aba0e8dcd869a&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/topiccards/topic-page-screenshots/sexuality.ashx?rev=6d7acc6ac1004d81b316132b65b63158&quot;,&quot;Price&quot;:null,&quot;ResourceProviderId&quot;:&quot;{5177392E-4F82-4350-A2AA-5FEF1F51A496}&quot;,&quot;ResourceProvider&quot;:&quot;Head to Health&quot;,&quot;ResourceProviderLogo&quot;:&quot;&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;&quot;,&quot;ShortDescription&quot;:&quot;A resource that unifies many Australian mental health services for LGBTI people.&quot;,&quot;TemplateName&quot;:&quot;InternalContentCard&quot;,&quot;Time&quot;:&quot;&quot;,&quot;Title&quot;:&quot;Sexuality&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/h2h-support-for-sexuality&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{710AA586-A714-4439-9806-FCEF9F9D3EC8}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;H2H Support for Sexuality&quot;},{&quot;ActionText&quot;:&quot;Read on Head to Health&quot;,&quot;ActionTarget&quot;:&quot;&quot;,&quot;ActionUrl&quot;:&quot;https://headtohealth.gov.au/COVID-19 Support/Impacts on everyday life/Stability and security&quot;,&quot;BackgroundColor&quot;:&quot;#ca437c&quot;,&quot;CategoryName&quot;:&quot;Head to Health pages&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/pages.ashx?rev=097fe592b7d04c4eb82150d1fbe79c21&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;COVID-19 has led to financial stress and work insecurity for many. Others have faced discrimination or felt unsafe because of their culture or background. This page links to a range of trusted online resources to cope with stress and worry caused by these situations and protect your mental health.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/topiccards/covid-stability-security-banner_card_2x.ashx?rev=0c4ec50f60314d21812c7c1b01b6c803&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/topiccards/topic-page-screenshots/stability-and-security---screenshot.ashx?rev=dc68cd968c2b4b5fad30a27fda1bc9d1&quot;,&quot;Price&quot;:null,&quot;ResourceProviderId&quot;:&quot;{5177392E-4F82-4350-A2AA-5FEF1F51A496}&quot;,&quot;ResourceProvider&quot;:&quot;Head to Health&quot;,&quot;ResourceProviderLogo&quot;:&quot;&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;&quot;,&quot;ShortDescription&quot;:&quot;Support for COVID-19 impacts related to work and housing insecurity, financial stress and personal safety.&quot;,&quot;TemplateName&quot;:&quot;InternalContentCard&quot;,&quot;Time&quot;:&quot;&quot;,&quot;Title&quot;:&quot;COVID-19 Support: Stability and security&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/h2h-covid-19-stability-and-security&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{1D25C44C-BB62-4858-B085-E9581A6389CB}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;H2H COVID-19 Stability and security&quot;},{&quot;ActionText&quot;:&quot;Read on Head to Health&quot;,&quot;ActionTarget&quot;:&quot;&quot;,&quot;ActionUrl&quot;:&quot;https://headtohealth.gov.au/mental-health-difficulties/mental-health-conditions/depressive-disorders&quot;,&quot;BackgroundColor&quot;:&quot;#0c719a&quot;,&quot;CategoryName&quot;:&quot;Head to Health pages&quot;,&quot;CategoryId&quot;:null,&quot;CategoryIconSrc&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/categories/pages.ashx?rev=097fe592b7d04c4eb82150d1fbe79c21&quot;,&quot;ContactTypeImage&quot;:&quot;&quot;,&quot;ContactTypeName&quot;:&quot;&quot;,&quot;ContactDetails&quot;:&quot;&quot;,&quot;Description&quot;:&quot;An informative service which helps you learn about depressive disorders, and find wellbeing services and support for depressive disorders. The Head to Health website brings together hundreds of Australian mental health resources and services, and leads you to the ones most helpful to your situation.&quot;,&quot;DisableWhiteBorderOnModalImage&quot;:false,&quot;CardButtonText&quot;:&quot;See more information&quot;,&quot;CardButtonAccessibilityText&quot;:&quot;&quot;,&quot;CardImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/topiccards/conditions-depressive.ashx?rev=ba8e0d8a27af47cfb2050ddb0981d343&quot;,&quot;ModalImage&quot;:&quot;https://dmhgprodsc9-cdn.azureedge.net/-/media/dmhg/topiccards/topic-page-screenshots/depressive.ashx?rev=b249b539f63a4089b2dfd971f2d1b98e&quot;,&quot;Price&quot;:null,&quot;ResourceProviderId&quot;:&quot;{5177392E-4F82-4350-A2AA-5FEF1F51A496}&quot;,&quot;ResourceProvider&quot;:&quot;Head to Health&quot;,&quot;ResourceProviderLogo&quot;:&quot;&quot;,&quot;ResourceProviderLogoWhite&quot;:&quot;&quot;,&quot;ShortDescription&quot;:&quot;A key resource in learning about depressive disorders and finding support.&quot;,&quot;TemplateName&quot;:&quot;InternalContentCard&quot;,&quot;Time&quot;:&quot;&quot;,&quot;Title&quot;:&quot;Depressive disorders&quot;,&quot;ModalPageUrl&quot;:&quot;/resources/h2h-mhc-depressive-disorders&quot;,&quot;FilterInfo&quot;:null,&quot;ItemId&quot;:&quot;{CEF9163D-20DF-4769-A280-0472444F0BE6}&quot;,&quot;ExtraFeatures&quot;:[],&quot;ItemName&quot;:&quot;H2H MHC Depressive disorders&quot;}]"/>
-
-
-            <h3 class="hcl__heading">
-                Popular topics on Head to Health 
-            </h3>
-
-
-    <div class="hcl__content" data-bind="css: { 'hcl__content--rendered': true }">
-        <button class="hcl__cards-nav-button hcl__cards-nav-button--prev" type="button">
-            <span class="sr-only">
-                Previous Cards <span class="sr-only hcl__cards-nav-button-range"></span> for Popular topics on Head to Health 
-            </span>
-        </button>
-        <ul class="hcl__cards"
-            aria-live="polite">
-            <!-- ko foreach: Cards -->
-            <li class="hcl__card"
-                tabindex="0"
-                data-bind="
-                    attr: {
-                        'aria-labelledby': $data.ItemId,
-                        'data-index': $index(),
-                        'data-modal': ko.toJSON($data)
-                    },
-                    css: {
-                        'hcl__card--type-external': $data.TemplateName == 'ExternalContentCard',
-                        'hcl__card--type-internal': $data.TemplateName == 'InternalContentCard',
-                        'hcl__card--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                    }">
-                
-                <div class="hcl__card-background-color"
-                     data-bind="
-                        style: {
-                            backgroundColor: $data.BackgroundColor
-                        },
-                        css: {
-                            'hcl__card-background-color--type-external': $data.TemplateName == 'ExternalContentCard',
-                            'hcl__card-background-color--type-internal': $data.TemplateName == 'InternalContentCard',
-                            'hcl__card-background-color--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                        }">
-                </div>
-
-                
-                <div class="hcl__card-background-image"
-                     data-bind="
-                        style: {
-                            backgroundImage: 'url(\'' + ($data.CardImage ? $data.CardImage : '') + '\')'
-                        },
-                        css: {
-                            'hcl__card-background-image--type-external': $data.TemplateName == 'ExternalContentCard',
-                            'hcl__card-background-image--type-internal': $data.TemplateName == 'InternalContentCard',
-                            'hcl__card-background-image--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                        }">
-                </div>
-
-                
-                
-                <h4 class="sr-only -tv-ignore:E898"
-                    data-bind="
-                        html: $data.Title,
-                        attr: { 'id': $data.ItemId }">
-                </h4>
-
-                
-                <div class="hcl__card-crisis-type"
-                     data-bind="
-                        css: {
-                            'hcl__card-crisis-type--type-external': $data.TemplateName == 'ExternalContentCard',
-                            'hcl__card-crisis-type--type-internal': $data.TemplateName == 'InternalContentCard',
-                            'hcl__card-crisis-type--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                        }">
-                    <span class="hcl__card-crisis-type-icon"
-                          aria-hidden="true"
-                          data-bind="
-                            style: {
-                                backgroundImage: 'url(\'' + ($data.ContactTypeImage ? $data.ContactTypeImage : '') + '\')'
-                            }">
-                    </span>
-                    <span class="hcl__card-crisis-type-text"
-                          data-bind="
-                            text: $data.ContactTypeName">
-                    </span>
-                </div>
-
-                
-                <div class="hcl__card-crisis-logo-and-number"
-                     data-bind="
-                        css: {
-                            'hcl__card-crisis-logo-and-number--type-external': $data.TemplateName == 'ExternalContentCard',
-                            'hcl__card-crisis-logo-and-number--type-internal': $data.TemplateName == 'InternalContentCard',
-                            'hcl__card-crisis-logo-and-number--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                        }">
-                    <div class="hcl__card-crisis-logo"
-                         data-bind="
-                            style: {
-                                backgroundImage: 'url(\'' + ($data.ResourceProviderLogoWhite ? $data.ResourceProviderLogoWhite : '') + '\')'
-                            }">
+                        <div class="feature-box__text" style="text-align:center;">
+                            So what if you’re not able to drive your car on the road these days? You can drive virtually. This game allows you to whiz through obstacle courses that you never knew existed.
+                        </div>
+                    
+                        <div class="feature-box__button-wrapper">
+                            <a class="feature-box__button
+                                feature-box__button--green" href="https://arcadespot.com/game/mario-kart-64/" target="_self" aria-label="Find out more about Keep Your Spirit Strong">
+                                <span class="feature-box__button-text" style="text-decoration: none; text-align: center;">
+                                    Play Game
+                                </span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="hcl__card-crisis-number"
-                         data-bind="
-                            text: $data.ContactDetails">
+                    <div class="feature-box
+                            feature-box--type-homepage
+                            feature-box--type-homepage-4-boxes
+                            feature-box--turquoise">
+                        <div class="feature-box__digi
+                             feature-box__digi--type-homepage
+                             feature-box__digi--type-homepage-4-boxes"></div>
+
+                        <h2 class="feature-box__heading
+                            feature-box__heading--type-homepage
+                            feature-box__heading--turquoise" style="text-align: center;">
+                            Alto's Adentures
+                        </h2>
+
+                        <div class="feature-box__text" style="text-align: center;">
+                            You’ll enjoy listening to relaxing music as you jump over hills and other obstacles. The game is loaded with beautiful graphics and exciting gameplay
+
+                        </div>
+                    
+                        <div class="feature-box__button-wrapper">
+                            <a class="feature-box__button
+                                feature-box__button--turquoise" href="https://noodlecake.com/games/altos-adventure/" target="_self" aria-label="Find out more about New digital mental health standards">
+                                <span class="feature-box__button-text" style="text-decoration: none;text-align: center;">
+                                    Play Game
+                                </span>
+                            </a>
+                        </div>
                     </div>
-                </div>
+                <div class="homepage__feature-boxes-spacer
+                     homepage__feature-boxes-spacer--4-boxes"></div>
+        </div>
+    </div> 
+    <div class="homepage__feature-boxes-area">
+        <div class="homepage__feature-boxes-max-width-container
+             homepage__feature-boxes-max-width-container--4-boxes card">
+                    <div class="feature-box
+                            feature-box--type-homepage
+                            feature-box--type-homepage-4-boxes
+                            feature-box--pink">
+                        <div class="feature-box__digi--type-homepage-4-boxes"></div>
 
+                        <h2 class="feature-box__heading
+                            feature-box__heading--type-homepage
+                            feature-box__heading--pink" style="text-align: center;">
+                            Personal Zen
+                        </h2>
+
+                        <div class="feature-box__text" style="text-align: center;">
+                            It’s been clinically proven to help exercise the mind and promote overall wellness. Research has shown that interacting with this game for 5-10 minutes a couple of times a week can bring about significant positive results.
+                        </div>
+                    
+                        <div class="feature-box__button-wrapper">
+                            <a class="feature-box__button
+                                feature-box__button--pink" href="https://personalzen.com/" target="_self">
+                                <span class="feature-box__button-text" style="text-decoration: none;">
+                                    Play Game
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="feature-box
+                            feature-box--type-homepage
+                            feature-box--type-homepage-4-boxes
+                            feature-box--purple">
+                        <div class="feature-box__digi
+                             feature-box__digi--type-homepage
+                             feature-box__digi--type-homepage-4-boxes"></div>
+
+                        <h2 class="feature-box__heading
+                            feature-box__heading--type-homepage
+                            feature-box__heading--purple" style="text-align:center;">
+                            Relaxing Puzzler
+                        </h2>
+
+                        <div class="feature-box__text">
+                            This easy-to-use meditative puzzle game is another perfect solution for those who are constantly feeling anxious. The beautiful scenes are inspired by modern, thoughtful art styles such as those from Zen Gardening, Sumi inks, and Indian Buddhist art.
+
+
+                        </div>
+                    
+                        <div class="feature-box__button-wrapper">
+                            <a class="feature-box__button
+                                feature-box__button--purple" href="https://personalzen.com/" target="_self" aria-label="Find out more about Monthly newsletter">
+                                <span class="feature-box__button-text" style="text-decoration: none; text-align: center;">
+                                    Play Game
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="feature-box
+                            feature-box--type-homepage
+                            feature-box--type-homepage-4-boxes
+                            feature-box--green">
+                        <div class="feature-box__digi
+                             feature-box__digi--type-homepage
+                             feature-box__digi--type-homepage-4-boxes"></div>
+                        <h2 class="feature-box__heading
+                            feature-box__heading--type-homepage
+                            feature-box__heading--green" style="text-align: center;">
+                            Clash of Clans
+                        </h2>
+
+                        <div class="feature-box__text" style="text-align:center;">
+                            Though this strategy game is jam-packed with action, it just maybe what you need to get your mind out of the corona cloud. Go ahead and join a team of players.
+                        </div>
+                    
+                        <div class="feature-box__button-wrapper">
+                            <a class="feature-box__button
+                                feature-box__button--green" href="https://supercell.com/en/games/clashofclans/" target="_self" aria-label="Find out more about Keep Your Spirit Strong">
+                                <span class="feature-box__button-text" style="text-decoration: none; text-align: center;">
+                                    Play Game
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="feature-box
+                            feature-box--type-homepage
+                            feature-box--type-homepage-4-boxes
+                            feature-box--turquoise">
+                        <div class="feature-box__digi
+                             feature-box__digi--type-homepage
+                             feature-box__digi--type-homepage-4-boxes"></div>
+
+                        <h2 class="feature-box__heading
+                            feature-box__heading--type-homepage
+                            feature-box__heading--turquoise" style="text-align: center;">
+                            Angry Birds
+                        </h2>
+
+                        <div class="feature-box__text" style="text-align: center;">
+                            You don’t have to feel angry about being locked indoors anymore. This slingshot adventure game is so entertaining that your worries will simply fly away.
+
+                        </div>
+                    
+                        <div class="feature-box__button-wrapper">
+                            <a class="feature-box__button
+                                feature-box__button--turquoise" href="https://www.angrybirds.com/" target="_self" aria-label="Find out more about New digital mental health standards">
+                                <span class="feature-box__button-text" style="text-decoration: none;text-align: center;">
+                                    Play Game
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                <div class="homepage__feature-boxes-spacer
+                     homepage__feature-boxes-spacer--4-boxes"></div>
+        </div>
+    </div>         
+        
+
+
+   
+    
                 
-                <div class="hcl__card-image"
-                     data-bind="
-                        style: {
-                            backgroundImage: 'url(\'' + ($data.CardImage ? $data.CardImage : '') + '\')'
-                        },
-                        css: {
-                            'hcl__card-image--type-external': $data.TemplateName == 'ExternalContentCard',
-                            'hcl__card-image--type-internal': $data.TemplateName == 'InternalContentCard',
-                            'hcl__card-image--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                        }">
-                </div>
-
-                
-                <!-- ko foreach: $data.ExtraFeatures -->
-                <!-- ko if: ($data.FeatureName == "TherapistGuided") -->
-                <div class="hcl__card-therapist-guided"
-                     data-bind="
-                        text: $data.FeatureData,
-                        css: {
-                            'hcl__card-therapist-guided--type-external': $data.TemplateName == 'ExternalContentCard',
-                            'hcl__card-therapist-guided--type-internal': $data.TemplateName == 'InternalContentCard',
-                            'hcl__card-therapist-guided--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                        }">
-                </div>
-                <!-- /ko -->
-                <!-- /ko -->
-                
-                <h4 class="hcl__card-title -tv-ignore:E866"
-                    aria-hidden="true"
-                    data-bind="
-                        html: $data.Title,
-                        css: {
-                            'hcl__card-title--type-external': $data.TemplateName == 'ExternalContentCard',
-                            'hcl__card-title--type-internal': $data.TemplateName == 'InternalContentCard',
-                            'hcl__card-title--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                        }">
-                </h4>
-
-                
-                <button class="hcl__card-button action-button -tv-ignore:E866"
-                        type="button"
-                        data-bind="
-                            attr: {
-                                'aria-label':  $data.CardButtonAccessibilityText
-                            },
-                            css: {
-                                'hcl__card-button--type-external': $data.TemplateName == 'ExternalContentCard',
-                                'hcl__card-button--type-internal': $data.TemplateName == 'InternalContentCard',
-                                'hcl__card-button--type-crisis': $data.TemplateName == 'CrisisContentCard',
-                            }">
-                    <span class="hcl__card-button-text" data-bind="text: $data.CardButtonText ? $data.CardButtonText : 'See more information'"></span>
-                </button>
-            </li>
-            <!-- /ko -->
-
-                <li class="hcl__search-card">
-                    <h4 class="hcl__search-card-title">
-                        Search for more topics on Head to Health
-                    </h4>
-                    <a class="hcl__search-card-link"
-                       href="search-resourcesa8a7.html?search=Head%20to%20Health%20pages">
-                        <span class="hcl__search-card-link-text">
-                            Start search
-                        </span>
-                    </a>
-                </li>
-
-            <li class="hcl__end-spacer"
-                aria-hidden="true">
-            </li>
-        </ul>
-        <button class="hcl__cards-nav-button hcl__cards-nav-button--next" type="button">
-            <span class="sr-only">
-                Next Cards <span class="sr-only hcl__cards-nav-button-range"></span> for Popular topics on Head to Health 
-            </span>
-        </button>
-    </div>
+             
     <div class="hcl__dots">
     </div>
 </div>
@@ -7871,8 +7541,8 @@
                 <strong>SAM</strong> is a <strong>S</strong>earch <strong>A</strong>ssistant for your <strong>M</strong>ind. When you&rsquo;re not sure how or where to start, SAM has been created to guide you towards helpful resources.
             </div>
             <div class="homepage__sam-links">
-                <a class="homepage__sam-sam-link" href="sam-the-chatbot.html">Find resources with SAM</a>
-                <a class="homepage__sam-search-link" href="search-resources.html">go to search page</a>
+                <a class="homepage__sam-sam-link" href="sam-the-chatbot.html" style="text-decoration: none;">Find resources with SAM</a>
+                <a class="homepage__sam-search-link" href="search-resources.html" style="text-decoration: none;">go to search page</a>
             </div>
         </div>
     </div>
@@ -7889,7 +7559,7 @@
                                 Find resources about how you can use Head to Health with your patients.
                             </div>
                         </div>
-                        <a class="homepage__secondary-content-box-link" href="https://headtohealth.gov.au:443/for-health-professionals/supporting-your-patients" target="_self" aria-label="View health professionals resources">
+                        <a class="homepage__secondary-content-box-link" href="https://headtohealth.gov.au:443/for-health-professionals/supporting-your-patients" target="_self" aria-label="View health professionals resources" style="text-decoration: none;">
                             View health professionals resources
                         </a>
                     </div>
@@ -7902,7 +7572,7 @@
                                 Head to Health brings together 500+ resources and services from Australia's trusted mental health service providers.&nbsp; These resources include apps, online forums, and phone services.
                             </div>
                         </div>
-                        <a class="homepage__secondary-content-box-link" href="https://headtohealth.gov.au:443/service-providers/explore-all-service-providers" target="_self" aria-label="View all service providers">
+                        <a class="homepage__secondary-content-box-link" href="https://headtohealth.gov.au:443/service-providers/explore-all-service-providers" target="_self" aria-label="View all service providers" style="text-decoration: none;">
                             View all service providers
                         </a>
                     </div>
@@ -7920,7 +7590,7 @@
             <div class="homepage__about-head-to-health-text">
                 Head to Health is a collaboration between the Australian Department of Health, the community, and the mental health sector.
             </div>
-            <a class="homepage__about-head-to-health-link" href="about-us.html" aria-label="Learn more about Head to Health">
+            <a class="homepage__about-head-to-health-link" href="about-us.html" aria-label="Learn more about Head to Health" style="text-decoration: none;">
                 Learn more about Head to Health
             </a>
         </div>
